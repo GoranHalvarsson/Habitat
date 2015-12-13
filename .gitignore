@@ -10,7 +10,7 @@ artifacts/
 *.userprefs
 *DS_Store
 *.sln.ide
-lib/Sitecore/*
+lib
 !lib/Sitecore/readme.MD
 lib/System/*
 !lib/System/readme.MD
