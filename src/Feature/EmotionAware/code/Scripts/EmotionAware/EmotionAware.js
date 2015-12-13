@@ -35,7 +35,7 @@ Habitat.EmotionAware = {
         var video = document.createElement('video'),
                     canvas = document.createElement('canvas'),
                     context = canvas.getContext('2d'),
-                    localMediaStream = null,
+                    localMediaStreamTrack = null,
                     snap = false;
 
         var mediaConstraints = { audio: false, video: { width: 400, height: 320 } }
@@ -48,8 +48,14 @@ Habitat.EmotionAware = {
         video.setAttribute('autoplay', true);
 
         function successCallback(stream) {
+
             video.src = (window.URL && window.URL.createObjectURL) ? window.URL.createObjectURL(stream) : stream;
-            localMediaStream = stream;
+            var streamTracks = stream.getTracks();
+
+            if (streamTracks != null && streamTracks.length > 0) {
+                localMediaStreamTrack = streamTracks[0];
+            }
+            
             processWebcamVideo();
         }
 
@@ -69,7 +75,7 @@ Habitat.EmotionAware = {
                 if (face.height <= 35)
                     continue;
                 //Face is found, now it's to 
-                if (localMediaStream) {
+                if (localMediaStreamTrack) {
                     callback(canvas.toDataURL('image/jpeg', 0.5).substring(canvas.toDataURL('image/jpeg', 0.5).lastIndexOf(',')+1));
                     return true;
                 }
@@ -101,7 +107,7 @@ Habitat.EmotionAware = {
             if (!snap) {
                 setTimeout(processWebcamVideo, 50);
             } else {
-                localMediaStream.stop();
+                localMediaStreamTrack.stop();
             }
         }
 
