@@ -54,9 +54,10 @@ Habitat.EmotionAware = {
 
             if (streamTracks != null && streamTracks.length > 0) {
                 localMediaStreamTrack = streamTracks[0];
+                processWebcamVideo();
             }
             
-            processWebcamVideo();
+            
         }
 
         function errorCallback(error) {
@@ -74,7 +75,8 @@ Habitat.EmotionAware = {
 
                 if (face.height <= 35)
                     continue;
-                //Face is found, now it's to 
+
+                //Face is found
                 if (localMediaStreamTrack) {
                     callback(canvas.toDataURL('image/jpeg', 0.5).substring(canvas.toDataURL('image/jpeg', 0.5).lastIndexOf(',')+1));
                     return true;
