@@ -7,6 +7,7 @@ namespace Sitecore.Foundation.MultiSite.Dialogs
 {
   using Sitecore.Data.Items;
   using Sitecore.Diagnostics;
+  using Sitecore.Foundation.MultiSite.Providers;
   using Sitecore.Shell.Applications.Dialogs.ItemLister;
   using Sitecore.Web.UI.HtmlControls;
   using Sitecore.Web.UI.Pages;
@@ -16,6 +17,8 @@ namespace Sitecore.Foundation.MultiSite.Dialogs
 
   public class DatasourceSettingsPage : DialogForm
   {
+    private const string DialogRootSettingName = "Foundation.Multisite.DatasourceDialogRoot";
+
     protected DataContext DataContext;
     /// <summary>
     /// The dialog.
@@ -41,8 +44,16 @@ namespace Sitecore.Foundation.MultiSite.Dialogs
       if (this.DataContext != null)
       {
         this.DataContext.GetFromQueryString();
-        this.DataContext.Root = "/sitecore/layout/renderings/feature";
+        this.DataContext.Root = this.Root;
         this.DataContext.Filter = this.GetFilter();
+      }
+    }
+
+    protected string Root
+    {
+      get
+      {
+        return Sitecore.Configuration.Settings.GetSetting(DialogRootSettingName, "/sitecore/layout/renderings/feature");
       }
     }
 
@@ -75,7 +86,7 @@ namespace Sitecore.Foundation.MultiSite.Dialogs
 
     protected string GetFilter()
     {
-      return string.Format("(contains(@@templatekey, 'folder') or contains(@Datasource Location, '$site'))");
+      return string.Format("(contains(@@templatekey, 'folder') or contains(@Datasource Location, '" + DatasourceConfigurationService.SiteDatasourcePrefix + "'))");
     }
   }
 }
