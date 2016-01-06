@@ -54,6 +54,45 @@ Languages:
             <r uid="{6D6BAA73-DFEE-4585-B961-4AB9A843C5C4}" p:before="r[@uid='{E6CA18D8-321D-4105-9C38-0622E94BE400}']" s:ds="{6B3E2125-9402-4ABE-BE65-1DC375B2111E}" s:id="{E86BFEB1-F3FC-4E37-B693-A5550D6789EE}" s:ph="/page-layout/col-huge_56552e8a-9180-44aa-a713-d30aceeeb6fd" />
             <r uid="{56552E8A-9180-44AA-A713-D30ACEEEB6FD}" s:ds="" s:par="ContainerIsFluid=1" />
             <r uid="{E0710D5F-C5A8-4E12-BC23-14FAA69486B5}" p:before="r[@uid='{E2040FB7-4151-456D-9315-5973E4EB4D9D}']" s:ds="" s:id="{B21C8A38-51BC-4866-9589-6062D6390247}" s:par="ContainerIsFluid" s:ph="page-layout" />
+            <r uid="{A9E6AA74-704A-4D84-B1C1-C70FE4601FB9}" p:before="r[@uid='{47F5A079-6F63-4219-BC45-1A221B200906}']" s:ds="" s:id="{781C6B36-4B02-46EA-8ADC-B92A11877F10}" s:par="" s:ph="footercolumn2">
+              <rls>
+                <ruleset>
+                  <rule uid="{BA6D29BB-37A1-4EC1-8C97-9EB300161022}" s:name="Microsoft">
+                    <conditions>
+                      <condition uid="C34D43CB77694BDEA2E3DE93BEAEBA88" s:id="{C83F07AC-02F7-4880-B617-832F6F28CBCC}" s:operatorid="{2E67477C-440C-4BCA-A358-3D29AED89F47}" s:value="Microsoft" />
+                    </conditions>
+                    <actions>
+                      <action uid="B2DB0898CFD34AA1ACADD29BFB47DAD5" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{47CD8FA4-68D8-480D-A45F-12E616AB73F7}" />
+                    </actions>
+                  </rule>
+                  <rule uid="{2212B2F4-3792-436F-84D4-70C3AE1E44B3}" s:name="Android">
+                    <conditions>
+                      <condition uid="0E7ABB7363E34BF689411DC7774CC8CA" s:id="{C83F07AC-02F7-4880-B617-832F6F28CBCC}" s:operatorid="{10537C58-1684-4CAB-B4C0-40C10907CE31}" s:value="Android" />
+                    </conditions>
+                    <actions>
+                      <action uid="B9F0CC1A4BC3410F93BDB18FD6080F70" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{BC03E4E6-D904-4EDC-8F77-7115AE0783CA}" />
+                    </actions>
+                  </rule>
+                  <rule uid="{7F473B68-F353-435A-8157-9302C85C777C}" s:name="Apple">
+                    <conditions>
+                      <condition uid="BD291E08E0B2466A8452ECA224140BE2" s:id="{C83F07AC-02F7-4880-B617-832F6F28CBCC}" s:operatorid="{A6AC5A6B-F409-48B0-ACE7-C3E8C5EC6406}" s:value="Apple" />
+                    </conditions>
+                    <actions>
+                      <action uid="02F0364AA52245EA81E718598ED957BB" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{11324B1B-B8C3-43A6-A35F-6F6142B8EEA8}" />
+                    </actions>
+                  </rule>
+                  <rule uid="{00000000-0000-0000-0000-000000000000}" s:name="Default">
+                    <conditions>
+                      <condition uid="A2EB9C8C91184F33B8E292BCC72A3E4A" s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                    <actions>
+                      <action uid="1396F8B26A2A4724912AEABD9950DCE1" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{11324B1B-B8C3-43A6-A35F-6F6142B8EEA8}" />
+                      <action uid="41D294A2BA5440A2AD2D32676E70BB84" s:id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}" />
+                    </actions>
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
           </d>
         </r>
     - ID: 1b483e91-d8c4-4d19-ba03-462074b55936
