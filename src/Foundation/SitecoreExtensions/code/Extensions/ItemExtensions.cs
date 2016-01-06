@@ -91,12 +91,7 @@
         throw new ArgumentNullException(nameof(item));
       }
 
-      if (item.IsDerived(templateID))
-      {
-        return item;
-      }
-
-      return item.Axes.GetAncestors().Reverse().FirstOrDefault(i => i.IsDerived(templateID));
+      return item.IsDerived(templateID) ? item : item.Axes.GetAncestors().Reverse().FirstOrDefault(i => i.IsDerived(templateID));
     }
 
 
@@ -254,7 +249,7 @@
 
     public static void SetDropLink(this Item item, ID fieldId, Item linkedItem)
     {
-      Assert.ArgumentNotNull(linkedItem, "linkedItem");
+      Assert.ArgumentNotNull(linkedItem, nameof(linkedItem));
       new InternalLinkField(item.Fields[fieldId]).Value = linkedItem.ID.Guid.ToString("P").ToUpper();
     }
 
@@ -296,7 +291,7 @@
 
     public static IEnumerable<Item> GetChildrenDerivedFrom(this Item item, ID templateId)
     {
-      return item.GetChildren().Where(c => IsDerived(c, templateId));
+      return item.GetChildren().Where(c => c.IsDerived(templateId));
     }
 
     public static bool HasLanguage(this Item item, string languageName)
@@ -312,11 +307,7 @@
     public static bool HasContextLanguage(this Item item)
     {
       var latestVersion = item.Versions.GetLatestVersion();
-      if (latestVersion != null)
-      {
-        return latestVersion.Versions.Count > 0;
-      }
-      return false;
+      return latestVersion?.Versions.Count > 0;
     }
 
     public static string GetUrl(this Item item)
@@ -332,7 +323,7 @@
 
     public static bool IsInSite(this Item item, SiteContext siteContext)
     {
-      Assert.ArgumentNotNull(siteContext, "siteContext");
+      Assert.ArgumentNotNull(siteContext, nameof(siteContext));
       Assert.IsNotNull(item, "Item is null");
       var rootItem = siteContext.Database.GetItem(siteContext.RootPath);
       for (var sitecoreItem = item; sitecoreItem != null; sitecoreItem = sitecoreItem.Parent)
@@ -385,7 +376,7 @@
       return item.HasVersionedRenderingsOnLanguage(Context.Language);
     }
 
-    public static bool HasVersionedRenderingsOnVersion(this Item item, Language language, Sitecore.Data.Version version)
+    public static bool HasVersionedRenderingsOnVersion(this Item item, Language language, Data.Version version)
     {
       var versionItem = item.Database.GetItem(item.ID, language, version);
       return versionItem != null && versionItem.HasVersionedRenderings();
