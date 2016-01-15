@@ -3,6 +3,10 @@ ID: fa333fc7-7f62-499b-8cea-e2cb837f208d
 Parent: 6aa25831-0944-4a79-9aff-7bac39e03557
 Template: c7d9d293-4ef8-4380-8e10-c4632e729f39
 Path: /sitecore/content/Habitat/Global/Teasers/Media Documentation
+SharedFields:
+- ID: ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e
+  # __Sortorder
+  Value: 700
 Languages:
 - Language: en
   Versions:

@@ -3,6 +3,10 @@ ID: 4a1e242e-fd29-4529-bee0-3a9b1cac30ab
 Parent: 6aa25831-0944-4a79-9aff-7bac39e03557
 Template: c7d9d293-4ef8-4380-8e10-c4632e729f39
 Path: /sitecore/content/Habitat/Global/Teasers/Lighboxes
+SharedFields:
+- ID: ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e
+  # __Sortorder
+  Value: 600
 Languages:
 - Language: en
   Versions:

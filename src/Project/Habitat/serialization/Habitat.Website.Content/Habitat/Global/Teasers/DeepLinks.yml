@@ -1,12 +1,12 @@
 ﻿---
-ID: 8508f499-b20d-4505-a5c8-66cdb715d748
+ID: 46559891-987a-4c07-80fd-b989866db393
 Parent: 6aa25831-0944-4a79-9aff-7bac39e03557
 Template: 29d4b405-39eb-487d-9d6b-3f8467ab167d
-Path: /sitecore/content/Habitat/Global/Teasers/Content
+Path: /sitecore/content/Habitat/Global/Teasers/DeepLinks
 SharedFields:
 - ID: ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e
   # __Sortorder
-  Value: 200
+  Value: 300
 Languages:
 - Language: en
   Versions:
@@ -14,4 +14,4 @@ Languages:
     Fields:
     - ID: 25bed78c-4957-4165-998a-ca1b52f67497
       # __Created
-      Value: 20151210T003512Z
+      Value: 20160111T192040Z

@@ -3,6 +3,10 @@ ID: 6086f621-4a0e-4724-9d6f-ea7ba8139f57
 Parent: 6aa25831-0944-4a79-9aff-7bac39e03557
 Template: c7d9d293-4ef8-4380-8e10-c4632e729f39
 Path: /sitecore/content/Habitat/Global/Teasers/Flexibility
+SharedFields:
+- ID: ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e
+  # __Sortorder
+  Value: 500
 Languages:
 - Language: en
   Versions:
