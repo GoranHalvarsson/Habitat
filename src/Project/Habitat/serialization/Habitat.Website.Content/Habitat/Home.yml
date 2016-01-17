@@ -57,12 +57,28 @@ Languages:
             <r uid="{A9E6AA74-704A-4D84-B1C1-C70FE4601FB9}" p:before="r[@uid='{47F5A079-6F63-4219-BC45-1A221B200906}']" s:ds="{11324B1B-B8C3-43A6-A35F-6F6142B8EEA8}" s:id="{781C6B36-4B02-46EA-8ADC-B92A11877F10}" s:par="" s:ph="footercolumn2">
               <rls>
                 <ruleset>
-                  <rule uid="{EE9D8861-B018-4EE0-9226-964BB104381A}" s:name="Condition Name">
+                  <rule uid="{A7DDB85E-5450-4172-86E9-1AAA5A334AF3}" s:name="Apple">
+                    <actions>
+                      <action uid="BF99BA543E6740F1AE93ABD1AEEF8278" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{11324B1B-B8C3-43A6-A35F-6F6142B8EEA8}" />
+                    </actions>
                     <conditions>
-                      <condition uid="0CB9D23F92184F88B6FA23CA73E86A3C" s:id="{8A9B001F-FB59-4F0F-B3F3-C6C5360ED451}" s:Now="20160110T211600Z" />
+                      <and uid="D591829C193345ECB83353B43EDBC9F4">
+                        <condition uid="62B66B7D2F494575B561C3CDA1504699" s:id="{659CC5E0-6356-44DD-B562-6C590525121C}" s:Value="{15FB4B13-691C-4BBD-8904-6CEC99CA18C4}" />
+                        <condition uid="E3638C0B17B84DFAA463F80EBCD99B6E" s:id="{C83F07AC-02F7-4880-B617-832F6F28CBCC}" s:operatorid="{10537C58-1684-4CAB-B4C0-40C10907CE31}" s:value="Apple" />
+                      </and>
+                    </conditions>
+                  </rule>
+                  <rule uid="{EE9D8861-B018-4EE0-9226-964BB104381A}" s:name="Android">
+                    <conditions>
+                      <condition uid="6DCF67480E2B47F4A850C9DAB1E55A0C" s:id="{4752137E-AD43-457D-B941-A30431823B3A}" s:operatorid="{2E67477C-440C-4BCA-A358-3D29AED89F47}" s:value="Mozilla" />
                     </conditions>
                     <actions>
                       <action uid="F9D7F193D00C4329A786E3DF482273F0" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{BC03E4E6-D904-4EDC-8F77-7115AE0783CA}" />
+                    </actions>
+                  </rule>
+                  <rule uid="{E32EB595-ABCD-4B52-B709-44232FA6ECCF}" s:name="Microsoft">
+                    <actions>
+                      <action uid="7C7BD86A73084F1F9BF204128FBDAA0B" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{47CD8FA4-68D8-480D-A45F-12E616AB73F7}" />
                     </actions>
                   </rule>
                   <rule uid="{00000000-0000-0000-0000-000000000000}" s:name="Default">
@@ -70,7 +86,7 @@ Languages:
                       <condition uid="A2EB9C8C91184F33B8E292BCC72A3E4A" s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
                     </conditions>
                     <actions>
-                      <action uid="1396F8B26A2A4724912AEABD9950DCE1" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{11324B1B-B8C3-43A6-A35F-6F6142B8EEA8}" />
+                      <action uid="6F5643955A6D4C8B9AC5F35F61DCC84E" s:id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}" />
                     </actions>
                   </rule>
                 </ruleset>

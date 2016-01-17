@@ -1,12 +1,12 @@
 ﻿---
-ID: 11324b1b-b8c3-43a6-a35f-6f6142b8eea8
+ID: bc03e4e6-d904-4edc-8f77-7115ae0783ca
 Parent: 46559891-987a-4c07-80fd-b989866db393
 Template: c7d9d293-4ef8-4380-8e10-c4632e729f39
-Path: /sitecore/content/Habitat/Global/Teasers/DeepLinks/Apple App
+Path: /sitecore/content/Habitat/Global/Teasers/DeepLinks/Android Twitter App
 SharedFields:
 - ID: e8ab122c-6f54-4d4e-aec6-f81addc558fc
   # TeaserLink
-  Value: "<link text=\"Open Twitter app for Apple\" linktype=\"external\" url=\"http://github.com/sitecore/habitat\" anchor=\"\" target=\"_blank\" />"
+  Value: "<link text=\"Open TWITTER for android\" linktype=\"external\" url=\"http://github.com/sitecore/habitat\" anchor=\"\" target=\"_blank\" />"
 Languages:
 - Language: en
   Versions:
