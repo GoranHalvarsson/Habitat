@@ -15,7 +15,7 @@ Habitat.AppDeeplink = {
         if (jQuery("body").hasClass("pagemode-edit"))
             return;
 
-        var deeplinkData = Habitat.AppDeeplink.GetDeepLinkData();
+        var deeplinkData = Habitat.AppDeeplink.GetDeeplinkData("AppDeeplink");
 
         if (deeplinkData == null ||
             Habitat.AppDeeplink.IsNullOrEmpty(deeplinkData.storeUrl) ||
@@ -45,13 +45,13 @@ Habitat.AppDeeplink = {
         document.location.href = deepLinkData.storeUrl;
 
     },
-    GetDeepLinkData: function () {
+    GetDeeplinkData: function (className) {
 
-        var DeepLinkData = {};
-        DeepLinkData.storeUrl = jQuery(".AppDeeplink").data("storeurl");
-        DeepLinkData.deviceUrl = jQuery(".AppDeeplink").data("deviceurl");
+        var deeplinkData = {};
+        deeplinkData.storeUrl = jQuery("." + className).data("storeurl");
+        deeplinkData.deviceUrl = jQuery("." + className).data("deviceurl");
 
-        return DeepLinkData;
+        return deeplinkData;
 
     },
     IsNullOrEmpty: function(value) {
