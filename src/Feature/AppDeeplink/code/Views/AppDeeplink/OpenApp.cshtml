@@ -1,0 +1,8 @@
+﻿@model VisionsInCode.Feature.AppDeeplink.ViewModels.AppDeeplinkViewModel
+
+@if (Model != null)
+{
+    <div class="AppDeeplink"
+         data-storeurl="@Model.StoreUrl"
+         data-deviceurl="@Model.DeviceUrlWithParams"></div>
+}

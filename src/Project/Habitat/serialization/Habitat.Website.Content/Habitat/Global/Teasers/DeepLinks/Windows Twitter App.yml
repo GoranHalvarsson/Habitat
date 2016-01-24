@@ -2,8 +2,11 @@
 ID: 47cd8fa4-68d8-480d-a45f-12e616ab73f7
 Parent: 46559891-987a-4c07-80fd-b989866db393
 Template: c7d9d293-4ef8-4380-8e10-c4632e729f39
-Path: /sitecore/content/Habitat/Global/Teasers/DeepLinks/Microsoft Twitter App
+Path: /sitecore/content/Habitat/Global/Teasers/Deeplinks/Windows Twitter App
 SharedFields:
+- ID: 06d5295c-ed2f-4a54-9bf2-26228d113318
+  # __Icon
+  Value: MobileDeviceOS/16x16/windows.png
 - ID: ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e
   # __Sortorder
   Value: 350

@@ -1,0 +1,21 @@
+﻿---
+ID: d2f81fd3-1180-4f52-8c0b-9fce8ff36a6b
+Parent: 1c3f8b19-acf6-4db4-b9c9-f167b53c4c49
+Template: 1c3f8b19-acf6-4db4-b9c9-f167b53c4c49
+Path: /sitecore/templates/Project/Common/Content Types/AppDeeplinksFolder/__Standard Values
+SharedFields:
+- ID: 1172f251-dad4-4efb-a329-0c63500e4f1e
+  # __Masters
+  Type: TreelistEx
+  Value: {0E1C2680-F935-446E-82BE-DA1176C5BCB5}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+      # __Created
+      Value: 20160117T172958Z
+    - ID: 5dd74568-4d4b-44c1-b513-0af5f4cda34f
+      # __Created by
+      Value: sitecore\admin

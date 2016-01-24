@@ -1,0 +1,16 @@
+﻿---
+ID: b22ecf10-c7dc-4289-91a8-0f950aad1a41
+Parent: 0e1c2680-f935-446e-82be-da1176c5bcb5
+Template: 0e1c2680-f935-446e-82be-da1176c5bcb5
+Path: /sitecore/templates/Project/Common/Content Types/AppDeeplink/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+      # __Created
+      Value: 20160117T172929Z
+    - ID: 5dd74568-4d4b-44c1-b513-0af5f4cda34f
+      # __Created by
+      Value: sitecore\admin

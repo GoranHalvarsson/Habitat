@@ -1,0 +1,29 @@
+﻿---
+ID: 7019fb1e-924b-4c3c-b16d-d4796968db28
+Parent: f141caa1-c578-4347-af90-2aa6256d88b6
+Template: 0e1c2680-f935-446e-82be-da1176c5bcb5
+Path: /sitecore/content/Habitat/Global/Deeplinks content/Android Twitter
+SharedFields:
+- ID: 06d5295c-ed2f-4a54-9bf2-26228d113318
+  # __Icon
+  Value: MobileDeviceOS/16x16/android.png
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+      # __Created
+      Value: 20160117T173305Z
+    - ID: 275c127a-9e78-468d-b0f2-04b8f409a7e0
+      # AppDeeplinkSettingsAppName
+      Value: Twitter
+    - ID: 3356b59d-5796-4c23-b6f4-4588b4437375
+      # AppDeeplinkSettingsAppDeviceURL
+      Value: twitter://user?screen_name
+    - ID: 56260a54-cad0-4c17-a54b-faa580f09adf
+      # AppDeeplinkSettingsAppStoreURL
+      Value: https://itunes.apple.com/se/app/twitter/id333903271
+    - ID: 582d7235-2a91-4f79-88d8-1e00f2b8ec9d
+      # AppDeeplinkSettingsAppId
+      Value: 333903271

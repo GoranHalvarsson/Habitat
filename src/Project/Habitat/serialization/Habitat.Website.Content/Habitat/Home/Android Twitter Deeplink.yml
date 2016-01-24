@@ -1,0 +1,38 @@
+﻿---
+ID: 36b4527e-2632-451e-97f0-9d6cf031b718
+Parent: dac24edd-44fb-42ef-9ecd-1e8daf706386
+Template: 6ef8f8a0-c567-495b-9e00-8775a268a486
+Path: /sitecore/content/Habitat/Home/Android Twitter Deeplink
+SharedFields:
+- ID: 06d5295c-ed2f-4a54-9bf2-26228d113318
+  # __Icon
+  Value: MobileDeviceOS/16x16/android.png
+- ID: ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e
+  # __Sortorder
+  Value: 1000
+- ID: f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e
+  # __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s" p:p="1">
+      <d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r uid="{826F3EAF-90F2-4481-8DC4-7A2C28C04429}" p:before="r[@uid='{0E0C6DCA-1A29-4975-84D7-E99498A64A72}']" s:ds="{924A0CD9-4BD9-48CC-8DC0-D4815CF66A03}" s:id="{94DD2458-62F7-4FEE-8140-C144E44C0506}" s:par="" s:ph="footer" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: 1b483e91-d8c4-4d19-ba03-462074b55936
+      # NavigationTitle
+      Value: Apple Twitter Deeplink
+    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+      # __Created
+      Value: 20160117T215419Z
+    - ID: 9492e0bb-9df9-46e7-8188-ec795c4ade44
+      # Image
+      Value: 
+    - ID: c30a013f-3cc8-4961-9837-1c483277084a
+      # Title
+      Value: Apple Twitter Deeplink

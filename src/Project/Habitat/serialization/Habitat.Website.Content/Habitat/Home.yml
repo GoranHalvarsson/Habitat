@@ -3,6 +3,10 @@ ID: dac24edd-44fb-42ef-9ecd-1e8daf706386
 Parent: 725a45e3-e307-4b95-b363-2782b059df06
 Template: 4a8822cc-b418-4452-ab0f-8bb6df2f2114
 Path: /sitecore/content/Habitat/Home
+SharedFields:
+- ID: ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e
+  # __Sortorder
+  Value: 0
 Languages:
 - Language: en
   Versions:
@@ -86,7 +90,7 @@ Languages:
                       <condition uid="A2EB9C8C91184F33B8E292BCC72A3E4A" s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
                     </conditions>
                     <actions>
-                      <action uid="6F5643955A6D4C8B9AC5F35F61DCC84E" s:id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}" />
+                      <action uid="7789A6E0CE304D77B066D5AD5A2CFD93" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{11324B1B-B8C3-43A6-A35F-6F6142B8EEA8}" />
                     </actions>
                   </rule>
                 </ruleset>

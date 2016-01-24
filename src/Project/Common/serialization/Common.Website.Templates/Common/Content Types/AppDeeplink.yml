@@ -1,0 +1,29 @@
+﻿---
+ID: 0e1c2680-f935-446e-82be-da1176c5bcb5
+Parent: 8664a57f-f2c9-4b18-b4e5-d3fed495d212
+Template: ab86861a-6030-46c5-b394-e8f99e8b87db
+Path: /sitecore/templates/Project/Common/Content Types/AppDeeplink
+SharedFields:
+- ID: 06d5295c-ed2f-4a54-9bf2-26228d113318
+  # __Icon
+  Value: network/32x32/link.png
+- ID: 12c33f3f-86c5-43a5-aeb4-5598cec45116
+  # __Base template
+  Type: tree list
+  Value: |
+    {1930BBEB-7805-471A-A3BE-4858AC7CF696}
+    {5F8E43A4-506B-4080-962B-503A9A75AAC5}
+- ID: f7d48a55-2158-4f02-9356-756654404f73
+  # __Standard values
+  Value: {B22ECF10-C7DC-4289-91A8-0F950AAD1A41}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+      # __Created
+      Value: 20160117T172816Z
+    - ID: 5dd74568-4d4b-44c1-b513-0af5f4cda34f
+      # __Created by
+      Value: sitecore\admin
