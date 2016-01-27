@@ -25,10 +25,10 @@ Habitat.AppDeeplink = {
         Habitat.AppDeeplink.OpenApp(deeplinkData);
 
     },
-    OpenApp: function (deepLinkData) {
+    OpenApp: function (deeplinkData) {
 
-        document.location.href = deepLinkData.deviceUrl;
-        console.log("Opening URL: " + deepLinkData.deviceUrl);
+        document.location.href = deeplinkData.deviceUrl;
+        console.log("Opening URL: " + deeplinkData.deviceUrl);
 
         Habitat.AppDeeplink.OpenStoreTimeOut(deeplinkData);
 
@@ -39,10 +39,10 @@ Habitat.AppDeeplink = {
             Habitat.AppDeeplink.OpenStore(deeplinkData);
         }, 400);
     },
-    OpenStore: function (deepLinkData) {
+    OpenStore: function (deeplinkData) {
 
-        console.log("Timeout. Open fallback url: " + deepLinkData.storeUrl);
-        document.location.href = deepLinkData.storeUrl;
+        console.log("Timeout. Open fallback url: " + deeplinkData.storeUrl);
+        document.location.href = deeplinkData.storeUrl;
 
     },
     GetDeeplinkData: function (className) {
@@ -54,7 +54,7 @@ Habitat.AppDeeplink = {
         return deeplinkData;
 
     },
-    IsNullOrEmpty: function(value) {
+    IsNullOrEmpty: function (value) {
         return value == null || value === "";
     }
 
