@@ -67,7 +67,7 @@ Languages:
                     </actions>
                     <conditions>
                       <and uid="D591829C193345ECB83353B43EDBC9F4">
-                        <condition uid="62B66B7D2F494575B561C3CDA1504699" s:id="{659CC5E0-6356-44DD-B562-6C590525121C}" s:Value="{15FB4B13-691C-4BBD-8904-6CEC99CA18C4}" />
+                        <condition uid="62B66B7D2F494575B561C3CDA1504699" s:id="{659CC5E0-6356-44DD-B562-6C590525121C}" s:Value="{B6C812AD-AF28-479A-ADFE-310BB46BF009}" />
                         <condition uid="E3638C0B17B84DFAA463F80EBCD99B6E" s:id="{C83F07AC-02F7-4880-B617-832F6F28CBCC}" s:operatorid="{10537C58-1684-4CAB-B4C0-40C10907CE31}" s:value="Apple" />
                       </and>
                     </conditions>
