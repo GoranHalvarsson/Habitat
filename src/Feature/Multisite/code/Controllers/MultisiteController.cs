@@ -1,22 +1,21 @@
-﻿namespace Sitecore.Feature.MultiSite.Controllers
+﻿namespace Sitecore.Feature.Multisite.Controllers
 {
   using System.Web.Mvc;
-  using Sitecore.Feature.MultiSite.Repositories;
+  using Sitecore.Feature.Multisite.Repositories;
 
   public class MultisiteController : Controller
   {
-    private readonly ISiteDefinitionsRepository multisiteRepository;
+    private readonly ISiteConfigurationRepository multisiteRepository;
 
-    public MultisiteController() :this(new SiteDefinitionsRepository())
+    public MultisiteController() :this(new SiteConfigurationRepository())
     {  
     }
 
-    public MultisiteController(ISiteDefinitionsRepository multisiteRepository)
+    public MultisiteController(ISiteConfigurationRepository multisiteRepository)
     {
       this.multisiteRepository = multisiteRepository;
     }
 
-    [HttpGet]
     public ActionResult SwitchSite()
     {
       var definitions = multisiteRepository.Get();

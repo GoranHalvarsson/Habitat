@@ -1,8 +1,9 @@
-﻿namespace Sitecore.Foundation.MultiSite.Providers
+﻿namespace Sitecore.Foundation.Multisite.Providers
 {
   using System.Collections.Generic;
   using System.Linq;
   using Sitecore.Configuration;
+  using Sitecore.Data.Items;
   using Sitecore.Web;
 
   public class ConfigurationSiteDefinitionsProvider : SiteDefinitionsProviderBase
@@ -24,6 +25,11 @@
                Name = siteInfo.Name,
                IsCurrent = IsCurrent(siteInfo.Name)
              };
+    }
+
+    public override SiteDefinition GetContextSiteDefinition(Item item)
+    {
+      return CreateSiteDefinition(Sitecore.Context.Site.SiteInfo);
     }
   }
 }
