@@ -31,16 +31,20 @@
     private string BuildDeviceUrlWithParams(string deviceUrl)
     {
 
+      if(string.IsNullOrWhiteSpace(deviceUrl))
+        return string.Empty;
+
       string decodedQuery = System.Web.HttpUtility.UrlDecode(RenderingContext.Current.PageContext.RequestContext.HttpContext.Request.Url.Query);
+
+      if (string.IsNullOrWhiteSpace(decodedQuery))
+        return deviceUrl;
 
       object param = HttpUtility.ParseQueryString(decodedQuery).Get(AppDeeplinkViewModel.Constants.QueryParams.DeviceParams);
 
       if (param == null)
-        return string.Empty;
+        return deviceUrl;
 
-      if (deviceUrl == null)
-        return string.Empty;
-
+    
       return $"{deviceUrl}{param}";
 
     }
