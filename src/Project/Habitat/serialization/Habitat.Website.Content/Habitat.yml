@@ -76,12 +76,12 @@ Languages:
     - ID: 378b7d87-5775-4eb6-86b7-282d5359b1c6
       Hint: UserProfile
       Value: {14523428-879D-491C-9DF0-1417E82A4311}
-    - ID: 5eaef7ff-f42a-46cd-9fa6-68b429729037
-      # EmotionAwareSettingsSubscriptionKey
-      Value: 2b7889bbf1b242d7af21fa589af49542
     - ID: 835fa523-d28a-46a2-a589-6aa4a5bf0846
-      # RegisterOutcome
-      Value: {52054874-4767-47DC-8099-8C08BFA307AA}
+      Hint: RegisterOutcome
+      Value: {C2D9DFBC-E465-45FD-BA21-0A06EBE942D6}
+    - ID: 5eaef7ff-f42a-46cd-9fa6-68b429729037
+      Hint: EmotionAwareSettingsSubscriptionKey
+      Value: 2b7889bbf1b242d7af21fa589af49542
      - ID: b8027200-aab0-4876-b454-dbb85add9e3c
       Hint: HostName
       Value: habitat.local
