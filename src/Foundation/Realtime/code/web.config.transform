@@ -7,12 +7,12 @@
       <dependentAssembly xdt:Transform="InsertIfMissing" xdt:Locator="Condition(./_defaultNamespace:assemblyIdentity/@name='MongoDB.Bson')">
         <assemblyIdentity name="MongoDB.Bson" publicKeyToken="f686731cfb9cc103" culture="neutral" />
         <codeBase version="2.2.2.10" href="bin\MongoDB.Bson.dll" />
-        <codeBase version="1.10.0.62" href="bin\VisionsInCode\MongoDB.Bson.dll" />
+        <codeBase version="1.10.0.62" href="bin\Sitecore\MongoDB.Bson.dll" />
       </dependentAssembly>
       <dependentAssembly xdt:Transform="InsertIfMissing" xdt:Locator="Condition(./_defaultNamespace:assemblyIdentity/@name='MongoDB.Driver')">
         <assemblyIdentity name="MongoDB.Driver" publicKeyToken="f686731cfb9cc103" culture="neutral" />
         <codeBase version="2.2.2.10" href="bin\MongoDB.Driver.dll" />
-        <codeBase version="1.10.0.62" href="bin\VisionsInCode\MongoDB.Driver.dll" />
+        <codeBase version="1.10.0.62" href="bin\Sitecore\MongoDB.Driver.dll" />
       </dependentAssembly>
       <dependentAssembly  xdt:Transform="InsertIfMissing" xdt:Locator="Condition(./_defaultNamespace:assemblyIdentity/@name='Microsoft.AspNet.SignalR.Core')">
         <assemblyIdentity name="Microsoft.AspNet.SignalR.Core" publicKeyToken="31bf3856ad364e35" culture="neutral" />
