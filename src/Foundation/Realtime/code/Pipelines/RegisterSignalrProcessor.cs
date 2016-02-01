@@ -25,25 +25,11 @@ namespace VisionsInCode.Foundation.Realtime.Pipelines
       GlobalHost.HubPipeline.AddModule(new ErrorHandlingHubPipelineModule());
 
       ContainerBuilder containerBuilder = new ContainerBuilder();
-      containerBuilder.RegisterType<HubContextService>()
-        .As<IHubContextService>()
-        .InstancePerLifetimeScope();
-
-      containerBuilder.RegisterType<GeoCoordinateRepository>()
-       .As<IGeoCoordinateRepository>()
-       .InstancePerLifetimeScope();
-
-      containerBuilder.RegisterType<RealtimeVisitorRepository>()
-        .As<IRealtimeVisitorRepository>()
-        .InstancePerLifetimeScope();
-      
-      Log.Info("Build of container done", this);
+      containerBuilder.RegisterModule<RealtimeModule>();
 
       IContainer container = containerBuilder.Build();
 
       AutofacDependencyResolver resolver = new AutofacDependencyResolver(container);
-
-
 
       app.UseAutofacMiddleware(container);
 
@@ -54,10 +40,10 @@ namespace VisionsInCode.Foundation.Realtime.Pipelines
       });
 
 
-      AddSignalRInjection(container, resolver);
+      //AddSignalrInjection(container, resolver);
     }
 
-    private void AddSignalRInjection(IContainer container, AutofacDependencyResolver resolver)
+    private void AddSignalrInjection(IContainer container, AutofacDependencyResolver resolver)
     {
       ContainerBuilder updater = new ContainerBuilder();
 
@@ -67,8 +53,7 @@ namespace VisionsInCode.Foundation.Realtime.Pipelines
 
     public virtual void Process(PipelineArgs args)
     {
-      Log.Info("Pipeline process called", this);
-
+      Log.Info("Pipeline RegisterSignalrProcessor called", this);
 
     }
 

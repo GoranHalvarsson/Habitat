@@ -14,6 +14,7 @@ namespace VisionsInCode.Foundation.Realtime.Infrastructure
     {
       base.Load(containerBuilder);
 
+      //Register SignalR hubs (must be marked ExternallyOwned so that instances will be destroyed by SignalR rather than Autofac)
       containerBuilder.RegisterType<RealtimeHub>().ExternallyOwned();
 
       //containerBuilder.RegisterHubs(Assembly.GetExecutingAssembly())
@@ -22,7 +23,7 @@ namespace VisionsInCode.Foundation.Realtime.Infrastructure
       //containerBuilder.RegisterType<HubLifetimeScopeManager>().SingleInstance();
       //containerBuilder.RegisterType<HubActivator>().As<IHubActivator>().SingleInstance();
 
-      ////Register SignalR hubs (must be marked ExternallyOwned so that instances will be destroyed by SignalR rather than Autofac)
+      
       //containerBuilder.RegisterAssemblyTypes(typeof(VisionsInCode.Foundation.Realtime.Startup).Assembly)
       //  .Where(t => !t.IsAbstract && t.IsClass && t.IsAssignableTo<IHub>())
       //  .InstancePerDependency()
