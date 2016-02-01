@@ -1,4 +1,4 @@
-﻿namespace VisionsInCode.Feature.AppDeeplink.Rules
+﻿namespace VisionsInCode.Foundation.AppDeeplink.Rules
 {
 
   using System.Web;

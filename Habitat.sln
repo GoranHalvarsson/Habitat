@@ -167,11 +167,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisionsInCode.Feature.AppDe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisionsInCode.Feature.AppDeeplink.Tests", "src\Feature\AppDeeplink\tests\VisionsInCode.Feature.AppDeeplink.Tests.csproj", "{BBEEA59A-A2D1-421E-A82C-E8CCFCC580B3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SignalR", "SignalR", "{AF90B4A1-C620-4AFF-A426-DBD15C4F98A5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Realtime", "Realtime", "{AF90B4A1-C620-4AFF-A426-DBD15C4F98A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisionsInCode.Foundation.SignalR", "src\Foundation\SignalR\code\VisionsInCode.Foundation.SignalR.csproj", "{33210683-0A07-4190-B7CC-235D9B72AD5B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisionsInCode.Foundation.Realtime", "src\Foundation\Realtime\code\VisionsInCode.Foundation.Realtime.csproj", "{33210683-0A07-4190-B7CC-235D9B72AD5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisionsInCode.Foundation.SignalR.Tests", "src\Foundation\SignalR\tests\VisionsInCode.Foundation.SignalR.Tests.csproj", "{DCA5A741-50E5-47C3-8B1E-6A3D276006BE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisionsInCode.Foundation.Realtime.Tests", "src\Foundation\Realtime\tests\VisionsInCode.Foundation.Realtime.Tests.csproj", "{DCA5A741-50E5-47C3-8B1E-6A3D276006BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

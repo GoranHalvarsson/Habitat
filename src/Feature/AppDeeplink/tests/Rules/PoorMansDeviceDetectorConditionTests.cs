@@ -1,4 +1,4 @@
-﻿namespace VisionsInCode.Feature.AppDeeplink.Tests.Rules
+﻿namespace VisionsInCode.Foundation.AppDeeplink.Tests.Rules
 {
   using System;
   using FluentAssertions;
@@ -6,8 +6,8 @@
   using Sitecore.Data.Items;
   using Sitecore.FakeDb;
   using Sitecore.Rules;
-  using VisionsInCode.Feature.AppDeeplink.Rules;
-  using VisionsInCode.Feature.AppDeeplink.Tests.Extensions;
+  using VisionsInCode.Foundation.AppDeeplink.Rules;
+  using VisionsInCode.Foundation.AppDeeplink.Tests.Extensions;
   using Xunit;
 
   public class PoorMansDeviceDetectorConditionTests

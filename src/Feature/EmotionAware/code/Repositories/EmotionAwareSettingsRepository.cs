@@ -1,12 +1,13 @@
-﻿namespace VisionsInCode.Feature.EmotionAware.Repositories
+﻿namespace VisionsInCode.Foundation.EmotionAware.Repositories
 {
   using System.EnterpriseServices;
   using Sitecore.Data.Items;
   using System.Linq;
-  using VisionsInCode.Feature.EmotionAware.Models;
+  using VisionsInCode.Foundation.EmotionAware.Models;
 
   using Sitecore;
   using Sitecore.Foundation.SitecoreExtensions.Extensions;
+  using VisionsInCode.Feature.EmotionAware;
 
   public class EmotionAwareSettingsRepository : IEmotionAwareSettingsRepository
   {

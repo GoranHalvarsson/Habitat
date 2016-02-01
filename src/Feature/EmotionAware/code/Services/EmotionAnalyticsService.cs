@@ -1,6 +1,6 @@
-﻿namespace VisionsInCode.Feature.EmotionAware.Services
+﻿namespace VisionsInCode.Foundation.EmotionAware.Services
 {
-  using VisionsInCode.Feature.EmotionAware.Repositories;
+  using VisionsInCode.Foundation.EmotionAware.Repositories;
   using System.Collections.Generic;
   using System.Linq;
   using VisionsInCode.Foundation.ProjectOxfordAI.Enums;

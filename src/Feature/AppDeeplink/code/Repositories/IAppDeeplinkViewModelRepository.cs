@@ -1,6 +1,6 @@
-namespace VisionsInCode.Feature.AppDeeplink.Repositories
+namespace VisionsInCode.Foundation.AppDeeplink.Repositories
 {
-  using VisionsInCode.Feature.AppDeeplink.ViewModels;
+  using VisionsInCode.Foundation.AppDeeplink.ViewModels;
 
   public interface IAppDeeplinkViewModelRepository
   {

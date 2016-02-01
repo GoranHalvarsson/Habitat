@@ -1,4 +1,4 @@
-namespace VisionsInCode.Feature.EmotionAware.Services
+namespace VisionsInCode.Foundation.EmotionAware.Services
 {
   using VisionsInCode.Foundation.ProjectOxfordAI.Enums;
   using Sitecore.Analytics.Model;

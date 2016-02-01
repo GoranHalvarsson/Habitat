@@ -1,4 +1,4 @@
-﻿namespace VisionsInCode.Feature.EmotionAware.Models
+﻿namespace VisionsInCode.Foundation.EmotionAware.Models
 {
   public class EmotionAwareSettings
   {

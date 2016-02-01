@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<configuration  xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly xdt:Transform="InsertIfMissing" xdt:Locator="Condition(./_defaultNamespace:assemblyIdentity/@name='MongoDB.Bson')">
+        <assemblyIdentity name="MongoDB.Bson" publicKeyToken="f686731cfb9cc103" culture="neutral" />
+        <codeBase version="2.2.2.10" href="bin\MongoDB.Bson.dll" />
+        <codeBase version="1.10.0.62" href="bin\VisionsInCode\MongoDB.Bson.dll" />
+      </dependentAssembly>
+      <dependentAssembly xdt:Transform="InsertIfMissing" xdt:Locator="Condition(./_defaultNamespace:assemblyIdentity/@name='MongoDB.Driver')">
+        <assemblyIdentity name="MongoDB.Driver" publicKeyToken="f686731cfb9cc103" culture="neutral" />
+        <codeBase version="2.2.2.10" href="bin\MongoDB.Driver.dll" />
+        <codeBase version="1.10.0.62" href="bin\VisionsInCode\MongoDB.Driver.dll" />
+      </dependentAssembly>
+      <dependentAssembly  xdt:Transform="InsertIfMissing" xdt:Locator="Condition(./_defaultNamespace:assemblyIdentity/@name='Microsoft.AspNet.SignalR.Core')">
+        <assemblyIdentity name="Microsoft.AspNet.SignalR.Core" publicKeyToken="31bf3856ad364e35" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-2.2.0.0" newVersion="2.2.0.0" />
+      </dependentAssembly>
+      <dependentAssembly xdt:Transform="InsertIfMissing" xdt:Locator="Condition(./_defaultNamespace:assemblyIdentity/@name='Microsoft.Owin')">
+        <assemblyIdentity name="Microsoft.Owin" publicKeyToken="31bf3856ad364e35" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-3.0.1.0" newVersion="3.0.1.0" />
+      </dependentAssembly>
+      <dependentAssembly xdt:Transform="InsertIfMissing" xdt:Locator="Condition(./_defaultNamespace:assemblyIdentity/@name='Microsoft.Owin.Security')">
+        <assemblyIdentity name="Microsoft.Owin.Security" publicKeyToken="31bf3856ad364e35" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-3.0.1.0" newVersion="3.0.1.0" />
+      </dependentAssembly>
+      <dependentAssembly xdt:Transform="InsertIfMissing" xdt:Locator="Condition(./_defaultNamespace:assemblyIdentity/@name='Autofac')">
+        <assemblyIdentity name="Autofac" publicKeyToken="17863af14b0044da" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-3.5.0.0" newVersion="3.5.0.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+ 
+</configuration>

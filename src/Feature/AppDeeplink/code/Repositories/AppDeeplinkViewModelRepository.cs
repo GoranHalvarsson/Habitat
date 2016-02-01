@@ -1,10 +1,10 @@
-﻿namespace VisionsInCode.Feature.AppDeeplink.Repositories
+﻿namespace VisionsInCode.Foundation.AppDeeplink.Repositories
 {
   using System.Web;
   using Sitecore.Foundation.SitecoreExtensions.Extensions;
   using Sitecore.Mvc.Presentation;
   using Sitecore.Web.UI.WebControls;
-  using VisionsInCode.Feature.AppDeeplink.ViewModels;
+  using VisionsInCode.Foundation.AppDeeplink.ViewModels;
 
   public class AppDeeplinkViewModelRepository : IAppDeeplinkViewModelRepository
   {

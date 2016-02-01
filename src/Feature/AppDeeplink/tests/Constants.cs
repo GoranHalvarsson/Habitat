@@ -1,4 +1,4 @@
-﻿namespace VisionsInCode.Feature.AppDeeplink.Tests
+﻿namespace VisionsInCode.Foundation.AppDeeplink.Tests
 {
   using Sitecore.Data;
 

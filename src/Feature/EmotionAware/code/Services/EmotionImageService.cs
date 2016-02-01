@@ -1,4 +1,4 @@
-﻿namespace VisionsInCode.Feature.EmotionAware.Services
+﻿namespace VisionsInCode.Foundation.EmotionAware.Services
 {
   using System;
   using System.IO;
@@ -7,8 +7,8 @@
   using VisionsInCode.Foundation.ProjectOxfordAI.Services;
   using System.Collections.Generic;
   using System.Linq;
-  using VisionsInCode.Feature.EmotionAware.Models;
-  using VisionsInCode.Feature.EmotionAware.Repositories;
+  using VisionsInCode.Foundation.EmotionAware.Models;
+  using VisionsInCode.Foundation.EmotionAware.Repositories;
   using Sitecore.Diagnostics;
 
 

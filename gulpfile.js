@@ -52,6 +52,27 @@ gulp.task("03-Apply-Xml-Transform", function () {
 
 });
 
+gulp.task("Apply-Xml-Transform-Realtime", function () {
+    return gulp.src("./src/Foundation/Realtime/**/code/*.csproj")
+      .pipe(foreach(function (stream, file) {
+          return stream
+            .pipe(debug({ title: "Applying transform realtime:" }))
+            .pipe(msbuild({
+                targets: ["ApplyTransform"],
+                configuration: config.buildConfiguration,
+                logCommand: false,
+                verbosity: "normal",
+                maxcpucount: 0,
+                toolsVersion: 14.0,
+                properties: {
+                    WebConfigToTransform: config.websiteRoot + "\\web.config"
+                }
+            }));
+      }));
+
+});
+
+
 gulp.task("04-Optional-Copy-Local-Assemblies", function () {
   console.log("Copying site assemblies to all local projects");
   var files = config.sitecoreLibraries + "/**/*";
@@ -66,6 +87,20 @@ gulp.task("04-Optional-Copy-Local-Assemblies", function () {
       return stream;
     }));
 });
+
+
+gulp.task("Publish-Sitecore-Mongo.dll", function () {
+    var root = "./src/Foundation/Realtime/code/bin/Sitecore";
+    var binFiles = root + "/*.{dll,pdb}";
+    var destination = config.websiteRoot + "/bin/Sitecore/";
+   
+    console.log("copying to " + destination);
+
+
+    return gulp.src(binFiles, { base: root })
+      .pipe(gulp.dest(destination));
+});
+
 
 /*****************************
   Publish

@@ -1,4 +1,4 @@
-namespace VisionsInCode.Feature.AppDeeplink.Tests.Extensions
+namespace VisionsInCode.Foundation.AppDeeplink.Tests.Extensions
 {
   using Ploeh.AutoFixture;
   using Ploeh.AutoFixture.AutoNSubstitute;
