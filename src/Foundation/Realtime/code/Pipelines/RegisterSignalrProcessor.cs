@@ -15,15 +15,15 @@ namespace VisionsInCode.Foundation.Realtime.Pipelines
   {
     public void Configuration(IAppBuilder app)
     {
-      Log.Info("Startup has started", this);
+      Log.Info("OwinStartup has started", this);
 
-   
+      
       GlobalHost.HubPipeline.AddModule(new ErrorHandlingHubPipelineModule());
 
-     
+
       GlobalHost.DependencyResolver.Register(
             typeof(RealtimeHub),
-            () =>  new RealtimeHub(new RealtimeVisitorRepository(),new GeoCoordinateRepository(), new HubContextService(), new GeocoderService()));
+            () => new RealtimeHub(new RealtimeVisitorRepository(), new GeoCoordinateRepository(), new HubContextService(), new GeocoderService()));
 
       app.MapSignalR();
 
