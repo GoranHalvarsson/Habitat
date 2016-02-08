@@ -12,7 +12,6 @@
   using VisionsInCode.Foundation.Realtime.Enums;
   using VisionsInCode.Foundation.Realtime.Models;
   using VisionsInCode.Foundation.Realtime.Repositories;
-  using VisionsInCode.Foundation.SignalR;
 
   [HubName("RealtimeConnector")]
   public class RealtimeHub : Hub
@@ -77,9 +76,9 @@
       if (stopCalled)
       {
 
-        await this.realTimeUserRepository.RemoveConnection(Context);
+        await this.realTimeUserRepository.RemoveConnection(hubContextService.Resolve(Context));
 
-        RealtimeVisitor realTimeVisitor = await this.realTimeUserRepository.Get(Context);
+        RealtimeVisitor realTimeVisitor = await this.realTimeUserRepository.Get(hubContextService.Resolve(Context));
 
         if (!realTimeVisitor.RealtimeConnections.Any())
         {
@@ -104,13 +103,13 @@
           return;
 
         this.realTimeUserRepository.Delete(visitor.Id);
-        this.Clients.Group(Constants.Signalr.Groups.Listeners).onVisitorHasLeft(visitor);
+        this.Clients.Group(Constants.Realtime.SubscriberGroups.Listeners).onVisitorHasLeft(visitor);
       });
     }
 
     private async Task NotifyListenersVisitorHasLeft(RealtimeVisitor visitor)
     {
-      await this.Clients.Group(Constants.Signalr.Groups.Listeners).onVisitorHasLeft(visitor);
+      await this.Clients.Group(Constants.Realtime.SubscriberGroups.Listeners).onVisitorHasLeft(visitor);
     }
 
     public async Task<bool> AuthenticateListener()
@@ -122,7 +121,7 @@
       if (!hubService.IsUserAuthenticated())
         return false;
 
-      await SubscribeToChannel(Constants.Signalr.Groups.Listeners);
+      await SubscribeToChannel(Constants.Realtime.SubscriberGroups.Listeners);
 
       //await CleanUpOldVisitors(30);
 
@@ -151,15 +150,15 @@
 
     private async Task NotifyVisitor(RealtimeVisitor visitor)
     {
-      await this.Clients.Group(Constants.Signalr.Groups.Listeners).onVisitorChanged(visitor);
+      await this.Clients.Group(Constants.Realtime.SubscriberGroups.Listeners).onVisitorChanged(visitor);
     }
 
     public async Task SendClientMetaData(Object jsonData)
     {
       VisitorDataContainer visitorMetaDataContainer = JsonConvert.DeserializeObject<VisitorDataContainer>(jsonData.ToString());
 
-      RealtimeVisitor realTimeVisitor = await this.realTimeUserRepository.Get(Context) ??
-                                    await this.realTimeUserRepository.Create(Context, visitorMetaDataContainer);
+      RealtimeVisitor realTimeVisitor = await this.realTimeUserRepository.Get(hubContextService.Resolve(Context)) ??
+                                    await this.realTimeUserRepository.Create(hubContextService.Resolve(Context), visitorMetaDataContainer);
 
 
       if (realTimeVisitor.IsToBeDeleted && realTimeVisitor.RealtimeConnections.Any(
@@ -173,12 +172,12 @@
       await SubscribeToChannel(this.hubContextService.Resolve(Context).ContactId);
 
 
-      await this.realTimeUserRepository.UpdateMetaData(Context, visitorMetaDataContainer);
+      await this.realTimeUserRepository.UpdateMetaData(hubContextService.Resolve(Context), visitorMetaDataContainer);
 
 
       if (realTimeVisitor.RealtimeConnections.All(conn =>
           conn.ConnectionId != this.hubContextService.Resolve(Context).ConnectionId))
-        await this.realTimeUserRepository.AddConnection(Context);
+        await this.realTimeUserRepository.AddConnection(hubContextService.Resolve(Context));
 
       //Get geodata
       this.Clients.Caller.onWhereIs();
@@ -200,9 +199,9 @@
       GeoCoordinate? geoCoordinate =
           this.geoCoordinateRepository.Get(visitorMetaDataContainer.GetValueByKey(VisitorDataKeys.Coordinates));
 
-      await this.realTimeUserRepository.UpdateGeoLocation(Context, geoCoordinate);
+      await this.realTimeUserRepository.UpdateGeoLocation(hubContextService.Resolve(Context), geoCoordinate);
 
-      RealtimeVisitor realTimeUser = await this.realTimeUserRepository.Get(Context);
+      RealtimeVisitor realTimeUser = await this.realTimeUserRepository.Get(hubContextService.Resolve(Context));
 
       Int32 indexOfRealtimeConnection = realTimeUser.RealtimeConnections.ToList()
           .FindIndex(
@@ -210,14 +209,14 @@
 
       bool success =
           await
-              this.realTimeUserRepository.UpdateGeoLocationOnConnection(Context, indexOfRealtimeConnection,
+              this.realTimeUserRepository.UpdateGeoLocationOnConnection(hubContextService.Resolve(Context), indexOfRealtimeConnection,
                   geoCoordinate);
 
       if (!success)
         return;
 
       if (geoCoordinate.HasValue)
-        this.Clients.Group(Constants.Signalr.Groups.Listeners).onVisitorChanged(realTimeUser);
+        this.Clients.Group(Constants.Realtime.SubscriberGroups.Listeners).onVisitorChanged(realTimeUser);
 
       string geoData = geocoderService.GetFormattedGeoLocationData(geoCoordinate);
 
@@ -236,7 +235,7 @@
 
     public async Task SubscribeToVisitors()
     {
-      await SubscribeToChannel(Constants.Signalr.Groups.Visitors);
+      await SubscribeToChannel(Constants.Realtime.SubscriberGroups.Visitors);
     }
 
     public async Task UnSubscribeChannel(string channel)
@@ -251,7 +250,7 @@
 
     public async Task GetClientDataFromVisitors()
     {
-      await GetClientData(Constants.Signalr.Groups.Visitors);
+      await GetClientData(Constants.Realtime.SubscriberGroups.Visitors);
     }
 
     //public async Task NewContosoChatMessage(string name, string message)

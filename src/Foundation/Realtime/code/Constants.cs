@@ -1,14 +1,28 @@
-﻿namespace VisionsInCode.Foundation.SignalR
+﻿namespace VisionsInCode.Foundation.Realtime
 {
   public class Constants
   {
-    public struct Signalr
+    public struct Realtime
     {
-      public struct Groups
+      public struct SubscriberGroups
       {
         public const string Visitors = "visitors";
         public const string Listeners = "listeners";
       }
+
+
+      public const string DatabaseName = "signalr";
+
+      public struct CollectionNames
+      {
+        public const string RealtimeVisitor = "RealtimeVisitor";
+      }
+
+
     }
+
+    
+
+
   }
 }

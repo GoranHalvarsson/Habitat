@@ -52,7 +52,7 @@ gulp.task("03-Apply-Xml-Transform", function () {
 
 });
 
-gulp.task("Apply-Xml-Transform-Realtime", function () {
+gulp.task("Realtimey-Xml-Transform", function () {
     return gulp.src("./src/Foundation/Realtime/**/code/*.csproj")
       .pipe(foreach(function (stream, file) {
           return stream
@@ -89,11 +89,25 @@ gulp.task("04-Optional-Copy-Local-Assemblies", function () {
 });
 
 
-gulp.task("Publish-Sitecore-Mongo.dll", function () {
+gulp.task("Realtime-Copy-MongoDB-dll's", function () {
+    console.log("Copying newtonsoft and mongodb assemblies to website");
     var root = "./src/Foundation/Realtime/code/bin/Sitecore";
     var binFiles = root + "/*.{dll,pdb}";
     var destination = config.websiteRoot + "/bin/Sitecore/";
    
+    console.log("copying to " + destination);
+
+
+    return gulp.src(binFiles, { base: root })
+      .pipe(gulp.dest(destination));
+});
+
+gulp.task("Realtime-Copy-Newtonsoft8-dll", function () {
+    console.log("Copying newtonsoft assemblies to website");
+    var root = "./src/Foundation/Realtime/code/bin";
+    var binFiles = root + "/Newtonsoft.Json.{dll,pdb,xml}";
+    var destination = config.websiteRoot + "/bin/";
+
     console.log("copying to " + destination);
 
 

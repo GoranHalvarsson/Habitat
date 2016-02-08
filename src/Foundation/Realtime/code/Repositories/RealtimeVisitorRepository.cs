@@ -4,7 +4,6 @@
   using System.Collections.Generic;
   using System.Configuration;
   using System.Threading.Tasks;
-  using Microsoft.AspNet.SignalR.Hubs;
   using MongoDB.Bson;
   using MongoDB.Driver;
   using VisionsInCode.Foundation.Realtime.Infrastructure;
@@ -12,16 +11,13 @@
 
   public class RealtimeVisitorRepository : IRealtimeVisitorRepository
   {
-    internal const string CollectionName = "RealtimeVisitor";
-
+    
     private readonly IMongoCollection<RealtimeVisitor> realtimeVisitorCollection;
-    private readonly IHubContextService hubContextService;
-
-    public RealtimeVisitorRepository(IHubContextService hubContextService)
+   
+  
+    public RealtimeVisitorRepository() 
     {
-      realtimeVisitorCollection = GetCollection<RealtimeVisitor>(ConfigurationManager.ConnectionStrings["signalr"].ConnectionString, CollectionName);
-
-      this.hubContextService = hubContextService;
+      realtimeVisitorCollection = GetCollection<RealtimeVisitor>(ConfigurationManager.ConnectionStrings[Constants.Realtime.DatabaseName].ConnectionString, Constants.Realtime.CollectionNames.RealtimeVisitor);
     }
 
     public IMongoCollection<RealtimeVisitor> Collection()
@@ -45,23 +41,23 @@
         Builders<RealtimeVisitor>.Update.Set(v => v.IsToBeDeleted, realTimeVisitor.IsToBeDeleted));
     }
 
-    public async Task<RealtimeVisitor> Get(HubCallerContext hubContext)
+    public async Task<RealtimeVisitor> Get(IHubContextService hubContextService)
     {
-      return await realtimeVisitorCollection.Find(visitor => visitor.ContactId == this.hubContextService.Resolve(hubContext).ContactId).FirstOrDefaultAsync();
+      return await realtimeVisitorCollection.Find(visitor => visitor.ContactId == hubContextService.ContactId).FirstOrDefaultAsync();
     }
 
 
-    public async Task<bool> AddConnection(HubCallerContext hubContext)
+    public async Task<bool> AddConnection(IHubContextService hubContextService)
     {
 
-      FilterDefinition<RealtimeVisitor> filter = GetContactIdFilter(this.hubContextService.Resolve(hubContext).ContactId);
+      FilterDefinition<RealtimeVisitor> filter = GetContactIdFilter(hubContextService.ContactId);
 
       UpdateDefinition<RealtimeVisitor> update = Builders<RealtimeVisitor>.Update.Push(user => user.RealtimeConnections, new RealtimeConnection()
       {
-        ConnectionId = this.hubContextService.Resolve(hubContext).ConnectionId,
-        SessionId = this.hubContextService.Resolve(hubContext).SessionId,
+        ConnectionId = hubContextService.ConnectionId,
+        SessionId = hubContextService.SessionId,
         ConnectedAt = DateTime.Now,
-        UserAgent = this.hubContextService.Resolve(hubContext).Headers,
+        UserAgent = hubContextService.Headers,
         GeoCoordinates = new GeoJson() {Type = "Point", Coordinates = null}
       });
 
@@ -71,12 +67,12 @@
 
 
 
-    public async Task<bool> UpdateGeoLocation(HubCallerContext hubContext, GeoCoordinate? geoCoordinate)
+    public async Task<bool> UpdateGeoLocation(IHubContextService hubContextService, GeoCoordinate? geoCoordinate)
     {
       if (!geoCoordinate.HasValue)
         return false;
 
-      FilterDefinition<RealtimeVisitor> filter = GetContactIdFilter(this.hubContextService.Resolve(hubContext).ContactId);
+      FilterDefinition<RealtimeVisitor> filter = GetContactIdFilter(hubContextService.ContactId);
 
       UpdateDefinition<RealtimeVisitor> update = Builders<RealtimeVisitor>.Update.Set("RealtimeMetaData.loc.Coordinates",
         new BsonArray {geoCoordinate.Value.Latitude, geoCoordinate.Value.Longitude});
@@ -87,15 +83,15 @@
 
 
 
-    public async Task<bool> UpdateGeoLocationOnConnection(HubCallerContext hubContext, int indexOfRealtimeConnection, GeoCoordinate? geoCoordinate)
+    public async Task<bool> UpdateGeoLocationOnConnection(IHubContextService hubContextService, int indexOfRealtimeConnection, GeoCoordinate? geoCoordinate)
     {
       if (!geoCoordinate.HasValue)
         return false;
 
-      FilterDefinition<RealtimeVisitor> filter = GetContactIdFilter(this.hubContextService.Resolve(hubContext).ContactId);
+      FilterDefinition<RealtimeVisitor> filter = GetContactIdFilter(hubContextService.ContactId);
 
       UpdateDefinition<RealtimeVisitor> update = Builders<RealtimeVisitor>.Update.Set(
-        String.Format("RealTimeConnections.{0}.loc.Coordinates", indexOfRealtimeConnection),
+        $"RealtimeConnections.{indexOfRealtimeConnection}.loc.Coordinates",
         new BsonArray {geoCoordinate.Value.Latitude, geoCoordinate.Value.Longitude});
 
 
@@ -104,25 +100,25 @@
 
 
 
-    public async Task<bool> RemoveConnection(HubCallerContext hubContext)
+    public async Task<bool> RemoveConnection(IHubContextService hubContextService)
     {
 
       UpdateDefinition<RealtimeVisitor> updateFilter = Builders<RealtimeVisitor>.Update.PullFilter(p => p.RealtimeConnections,
-        r => r.ConnectionId == this.hubContextService.Resolve(hubContext).ConnectionId);
+        r => r.ConnectionId == hubContextService.ConnectionId);
 
       UpdateResult updateResult = await
         realtimeVisitorCollection.UpdateOneAsync(
-          user => user.ContactId == this.hubContextService.Resolve(hubContext).ContactId, updateFilter);
+          user => user.ContactId == hubContextService.ContactId, updateFilter);
 
       return updateResult.IsAcknowledged;
     }
 
 
-    public async Task<bool> UpdateMetaData(HubCallerContext hubContext, VisitorDataContainer metaDataContainer)
+    public async Task<bool> UpdateMetaData(IHubContextService hubContextService, VisitorDataContainer metaDataContainer)
     {
 
 
-      FilterDefinition<RealtimeVisitor> filter = GetContactIdFilter(this.hubContextService.Resolve(hubContext).ContactId);
+      FilterDefinition<RealtimeVisitor> filter = GetContactIdFilter(hubContextService.ContactId);
 
       UpdateDefinition<RealtimeVisitor> update = Builders<RealtimeVisitor>.Update.Set(user => user.RealtimeMetaData.MetaData,
         metaDataContainer.Container)
@@ -135,20 +131,20 @@
     }
 
 
-    public async Task<RealtimeVisitor> Create(HubCallerContext hubContext, VisitorDataContainer visitorDataContainer)
+    public async Task<RealtimeVisitor> Create(IHubContextService hubContextService, VisitorDataContainer visitorDataContainer)
     {
       RealtimeVisitor realTimeUser = new RealtimeVisitor()
       {
-        ContactId = this.hubContextService.Resolve(hubContext).ContactId,
+        ContactId = hubContextService.ContactId,
         CreatedDate = DateTime.UtcNow,
         RealtimeConnections = new List<RealtimeConnection>()
         {
           new RealtimeConnection()
           {
-            ConnectionId = this.hubContextService.Resolve(hubContext).ConnectionId,
-            SessionId = this.hubContextService.Resolve(hubContext).SessionId,
+            ConnectionId = hubContextService.ConnectionId,
+            SessionId = hubContextService.SessionId,
             ConnectedAt = DateTime.UtcNow,
-            UserAgent = this.hubContextService.Resolve(hubContext).Headers,
+            UserAgent = hubContextService.Headers,
             GeoCoordinates = new GeoJson() {Type = "point", Coordinates = new[] {0d, 0d}}
           }
         },

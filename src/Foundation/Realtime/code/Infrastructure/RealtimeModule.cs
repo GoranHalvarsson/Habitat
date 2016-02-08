@@ -2,10 +2,7 @@
 
 namespace VisionsInCode.Foundation.Realtime.Infrastructure
 {
-  using System.Reflection;
   using Autofac;
-  using Autofac.Integration.SignalR;
-  using Microsoft.AspNet.SignalR.Hubs;
   using VisionsInCode.Foundation.Realtime.Repositories;
 
   public class RealtimeModule : Autofac.Module
@@ -23,12 +20,14 @@ namespace VisionsInCode.Foundation.Realtime.Infrastructure
       //containerBuilder.RegisterType<HubLifetimeScopeManager>().SingleInstance();
       //containerBuilder.RegisterType<HubActivator>().As<IHubActivator>().SingleInstance();
 
-      
+
       //containerBuilder.RegisterAssemblyTypes(typeof(VisionsInCode.Foundation.Realtime.Startup).Assembly)
       //  .Where(t => !t.IsAbstract && t.IsClass && t.IsAssignableTo<IHub>())
       //  .InstancePerDependency()
       //  .ExternallyOwned();
 
+
+      //containerBuilder.RegisterHubs(Assembly.GetExecutingAssembly());
 
       containerBuilder.RegisterType<HubContextService>()
         .As<IHubContextService>()
