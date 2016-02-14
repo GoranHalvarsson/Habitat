@@ -1,0 +1,30 @@
+[Oo]bj/
+src/**/[Bb]in/
+specs/**/[Bb]in/
+.nuget/
+_ReSharper.*
+packages/
+artifacts/
+*.user
+*.cache
+*.suo
+*.userprefs
+*DS_Store
+*.sln.ide
+lib
+!lib/Sitecore/readme.MD
+lib/System/*
+!lib/System/readme.MD
+.sonar
+vars.user.cmd
+/.vs
+/target
+/node_modules
+temp/
+*.ncrunchproject
+*.ncrunchsolution
+<<<<<<< HEAD
+src/Feature/AppDeeplink/tests/license.xml
+=======
+.vscode
+>>>>>>> origin/master

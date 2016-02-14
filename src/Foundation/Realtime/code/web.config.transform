@@ -1,7 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <configuration  xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
-  
+
+  <appSettings xdt:Transform="InsertIfMissing">
+    <add key="ValidationSettings:UnobtrusiveValidationMode" value="None" xdt:Transform="InsertIfMissing" xdt:Locator="Match(key)"/>
+  </appSettings>
+  <system.web>
+    <httpRuntime  requestValidationMode="2.0" xdt:Transform="SetAttributes(requestValidationMode)" />
+  </system.web>
   <runtime>
     <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
       <dependentAssembly xdt:Transform="InsertIfMissing" xdt:Locator="Condition(./_defaultNamespace:assemblyIdentity/@name='MongoDB.Bson')">
@@ -32,5 +38,5 @@
       </dependentAssembly>
     </assemblyBinding>
   </runtime>
- 
+
 </configuration>
