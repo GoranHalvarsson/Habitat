@@ -1,4 +1,4 @@
-﻿namespace VisionsInCode.Foundation.AppDeeplink.ViewModels
+﻿namespace VisionsInCode.Feature.AppDeeplink.ViewModels
 {
 
   using System.Web;

@@ -1,8 +1,8 @@
-﻿namespace VisionsInCode.Foundation.AppDeeplink.Controllers
+﻿namespace VisionsInCode.Feature.AppDeeplink.Controllers
 {
   using System.Web.Mvc;
   using Sitecore.Mvc.Controllers;
-  using VisionsInCode.Foundation.AppDeeplink.Repositories;
+  using VisionsInCode.Feature.AppDeeplink.Repositories;
 
   public class AppDeeplinkController : SitecoreController
   {
