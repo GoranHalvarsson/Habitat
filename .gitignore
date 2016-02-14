@@ -23,4 +23,5 @@ vars.user.cmd
 temp/
 *.ncrunchproject
 *.ncrunchsolution
+.vscode
 src/Feature/AppDeeplink/tests/license.xml
