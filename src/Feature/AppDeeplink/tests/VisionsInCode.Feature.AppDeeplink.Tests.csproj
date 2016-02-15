@@ -89,10 +89,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Constants.cs" />
     <Compile Include="Extensions\InlineAutoDbDataAttribute.cs" />
     <Compile Include="Extensions\AutoDbDataAttribute.cs" />
-    <Compile Include="Rules\PoorMansDeviceDetectorConditionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

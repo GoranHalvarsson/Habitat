@@ -1,4 +1,4 @@
-﻿namespace VisionsInCode.Feature.AppDeeplink.Rules
+﻿namespace VisionsInCode.Foundation.SitecoreCustomizations.Rules
 {
 
   using System.Web;
