@@ -23,9 +23,11 @@
             {
               new Sitecore.FakeDb.DbItem("String Operators")
               {
-                new Sitecore.FakeDb.DbItem(Constants.StringOperations.Contains.ItemName, Constants.StringOperations.Contains.ItemID)
+                new Sitecore.FakeDb.DbItem(Constants.StringOperations.Contains.ItemName, Constants.StringOperations.Contains.ItemID),
+                new Sitecore.FakeDb.DbItem(Constants.StringOperations.MatchesTheRegularExpression.ItemName, Constants.StringOperations.MatchesTheRegularExpression.ItemID)
 
               }
+              
             }
           }
         }
@@ -63,8 +65,37 @@
 
       value.Should().Be(expectedResult);
 
+    }
+
+    [Theory]
+    [InlineAutoDbData("Mozilla/5.0 (iPhone; CPU iPhone OS 8_0 like Mac OS X) AppleWebKit/600.1.3 (KHTML, like Gecko) Version/8.0 Mobile/12A4345d Safari/600.1.4", "^(?!.*(iPhone|iPod|iPad|Android|BlackBerry|IEMobile))", false)]
+    public void DoesUserAgentMatchesTheRegularExpressionValueCondition(string userAgent, string regularExpressionValue, bool expectedResult, Db database)
+    {
 
 
+      SetupDb(database);
+
+
+      RuleContext ruleContext = new RuleContext();
+
+      PoorMansDeviceDetectorCondition<RuleContext> customUserAgentCondition = new PoorMansDeviceDetectorCondition<RuleContext>()
+      {
+        OperatorId = Constants.StringOperations.MatchesTheRegularExpression.ItemID.ToString(),
+        Value = regularExpressionValue,
+        UserAgent = userAgent
+      };
+
+      var ruleStack = new RuleStack();
+
+      // act
+      customUserAgentCondition.Evaluate(ruleContext, ruleStack);
+
+      // assert
+      ruleStack.Should().HaveCount(1);
+
+      object value = ruleStack.Pop();
+
+      value.Should().Be(expectedResult);
 
     }
   }

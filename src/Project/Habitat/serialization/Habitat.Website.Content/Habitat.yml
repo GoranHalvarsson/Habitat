@@ -60,11 +60,11 @@ Languages:
     Fields:
     - ID: 02115632-fe1e-4b3d-9ad4-a4ddf1f782f0
       Hint: Copyright
-      Value: "Copyright &copy; 2015 <a href=\"http://sitecore.net\" target=\"_blank\" title=\"Opens in a new window\">Sitecore Corporation A/S</a>"
+      Value: "Copyright © 2015 <a href=\"http://sitecore.net\" target=\"_blank\" title=\"Opens in a new window\">Sitecore Corporation A/S</a>"
     - ID: 021aa3f7-206f-4acc-9538-f6d7fe86b168
       Hint: InterestFolder
       Value: {A74EE096-F225-4568-8D81-2F71ABBC8118}
-    - ID: 12537182-f35c-403f-afb5-747d55c450b8	  
+    - ID: 12537182-f35c-403f-afb5-747d55c450b8
       Hint: ShowInMenu
       Value: 1
     - ID: 235ae392-97ac-4822-be38-837da3e7724e
@@ -76,13 +76,13 @@ Languages:
     - ID: 378b7d87-5775-4eb6-86b7-282d5359b1c6
       Hint: UserProfile
       Value: {14523428-879D-491C-9DF0-1417E82A4311}
-    - ID: 835fa523-d28a-46a2-a589-6aa4a5bf0846
-      Hint: RegisterOutcome
-      Value: {C2D9DFBC-E465-45FD-BA21-0A06EBE942D6}
     - ID: 5eaef7ff-f42a-46cd-9fa6-68b429729037
       Hint: EmotionAwareSettingsSubscriptionKey
       Value: 2b7889bbf1b242d7af21fa589af49542
-     - ID: b8027200-aab0-4876-b454-dbb85add9e3c
+    - ID: 835fa523-d28a-46a2-a589-6aa4a5bf0846
+      Hint: RegisterOutcome
+      Value: {C2D9DFBC-E465-45FD-BA21-0A06EBE942D6}
+    - ID: b8027200-aab0-4876-b454-dbb85add9e3c
       Hint: HostName
       Value: habitat.local
     - ID: e748d808-64c1-4dec-9718-f35cf9689e4b

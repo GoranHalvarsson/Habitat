@@ -32,6 +32,10 @@
       }
 
       var definitionItem = currentDefinition.Item;
+
+      if (definitionItem == null)
+        return null;
+
       var settingsFolder = definitionItem.Children[SettingsRootName];
 
       var sourceSettingItem = settingsFolder?.Children.FirstOrDefault(x => x.IsDerived(Templates.SiteSettings.ID) && x.Key.Equals(settingName.ToLower()));

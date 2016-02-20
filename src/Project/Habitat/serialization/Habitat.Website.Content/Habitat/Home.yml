@@ -96,8 +96,8 @@ Languages:
                       <condition uid="A2EB9C8C91184F33B8E292BCC72A3E4A" s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
                     </conditions>
                     <actions>
-                      <action uid="7789A6E0CE304D77B066D5AD5A2CFD93" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{11324B1B-B8C3-43A6-A35F-6F6142B8EEA8}" />
-                      <action uid="9CA2DDB700634785BDB1873C0E4155BA" s:id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}" />
+                      <action uid="ABC6DB5CB3624DB2B016EB282BDF696F" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{11324B1B-B8C3-43A6-A35F-6F6142B8EEA8}" />
+                      <action uid="AC40864A31F34457BB11E13F08412CE1" s:id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}" />
                     </actions>
                   </rule>
                 </ruleset>
