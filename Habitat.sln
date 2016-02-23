@@ -187,6 +187,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisionsInCode.Foundation.SitecoreCustomizations", "src\Foundation\SitecoreCustomizations\code\VisionsInCode.Foundation.SitecoreCustomizations.csproj", "{1522D439-7BCC-48FF-8AE5-A894423EC5C9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisionsInCode.Foundation.SitecoreCustomizations.Tests", "src\Foundation\SitecoreCustomizations\Tests\VisionsInCode.Foundation.SitecoreCustomizations.Tests.csproj", "{6DE59139-B8FE-4005-B490-1BCE6AA173F6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1B32FB80-BED9-4746-9362-CDB810C20896}"
+	ProjectSection(SolutionItems) = preProject
+		WebEssentials2015-Settings.json = WebEssentials2015-Settings.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
