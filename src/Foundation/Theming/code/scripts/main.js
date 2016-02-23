@@ -5,7 +5,7 @@ if(!window.console){
 
 jQuery.noConflict();
 
-(function($) {
+(function ($) {
   $(function() {
     var mq;
 
@@ -66,8 +66,6 @@ jQuery.noConflict();
 
     $('.grid-filter').each(function() {
       var $grid = $($(this).attr('data-grid-filter'));
-      // Options - not yet relevant, can be utilized later on.
-      //var options = (typeof $(this).attr('data-filter-options') !== "undefined") ? $.parseJSON($(this).attr('data-filter-options')) : null;
       var $filters = $(this).find('[data-group]');
       $grid.shuffle({
         itemSelector: '[data-groups]'
@@ -121,10 +119,15 @@ jQuery.noConflict();
       console.log(this);
       $('html').toggleClass('show-sidebar-left', $(this).attr('data-side') == 'left' && !$('html').hasClass('show-sidebar-left'));
       $('html').toggleClass('show-sidebar-right', $(this).attr('data-side') == 'right' && !$('html').hasClass('show-sidebar-right'));
+      $('.sidebar-closed, .sidebar-opened').toggle();
     });
+    
+
     $(document).delegate('*[data-toggle="lightbox"]', 'click', function (event) {
       event.preventDefault();
       $(this).ekkoLightbox();
     });
+
+    !$('html').hasClass('show-sidebar-left') && !$('html').hasClass('show-sidebar-left') ? $('.sidebar-closed').show() && $('.sidebar-opened').hide() : $('.sidebar-closed').hide() && $('.sidebar-opened').show();
   });
 })(jQuery);
