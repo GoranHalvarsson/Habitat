@@ -14,7 +14,7 @@ Habitat.Realtime = {
         if (jQuery("body").hasClass("pagemode-edit"))
             return;
 
-        var connection = $.hubConnection();
+        var connection = jQuery.hubConnection();
 
         //connection.hub.disconnected(function () {
         //    setTimeout(function () {
@@ -25,7 +25,7 @@ Habitat.Realtime = {
         var realTimeConnector = connection.createHubProxy("RealtimeConnector");
 
         realTimeConnector.on("onSetClientData", function (text) {
-            $("#hitCount").text(text);
+           alert(text);
         });
 
         realTimeConnector.on("onWhoIs", function () {
