@@ -1,0 +1,32 @@
+﻿---
+ID: b9145c1b-061d-40a4-a0e2-ab7ee9e72a6e
+Parent: fa8ed3ca-124c-4c02-a288-4054625cfce4
+Template: c2729cb5-650c-4eff-b255-5060a7dcc20b
+Path: /sitecore/content/Habitat/Mobile App/Modules/Project
+DB: master
+SharedFields:
+- ID: 5585a30d-b115-4753-93ce-422c3455deb2
+  Hint: ShowInNavigation
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: 1b483e91-d8c4-4d19-ba03-462074b55936
+      Hint: NavigationTitle
+      Value: Project
+    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+      Hint: __Created
+      Value: 20160324T220749Z
+    - ID: 9492e0bb-9df9-46e7-8188-ec795c4ade44
+      Hint: Image
+      Value: "<image mediaid=\"{D295ABFF-4BE5-4C08-A8E6-ED8DC49E927B}\" />"
+    - ID: ac3fd4db-8266-476d-9635-67814d91e901
+      Hint: Summary
+      Value: |
+        The project layer bind the solution together by tying the feature modules together on pages and channels.<br>
+        A solution can have multiple project modules - or sites - sharing features but having their own page types, layouts and visual designs.
+    - ID: c30a013f-3cc8-4961-9837-1c483277084a
+      Hint: Title
+      Value: Project layer

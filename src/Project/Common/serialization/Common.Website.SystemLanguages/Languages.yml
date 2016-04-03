@@ -7,7 +7,7 @@ DB: master
 SharedFields:
 - ID: 06d5295c-ed2f-4a54-9bf2-26228d113318
   Hint: __Icon
-  Value: Flags/16x16/flag_generic.png
+  Value: Office/16x16/flag_generic.png
 - ID: 1172f251-dad4-4efb-a329-0c63500e4f1e
   Hint: __Masters
   Type: TreelistEx
@@ -34,7 +34,7 @@ Languages:
   Fields:
   - ID: b5e02ad9-d56f-4c41-a065-a133db87bdeb
     Hint: __Display name
-    Value: Sprachen:
+    Value: Sprachen
   Versions:
   - Version: 1
     Fields:
@@ -48,6 +48,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: 1b86697d-60ca-4d80-83fb-7555a2e6ce1c
+      Hint: __Source
+      Value: 
     - ID: 25bed78c-4957-4165-998a-ca1b52f67497
       Hint: __Created
       Value: 20080312T094911:633409121519871754

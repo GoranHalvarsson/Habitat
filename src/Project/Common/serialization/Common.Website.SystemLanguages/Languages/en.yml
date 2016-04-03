@@ -7,7 +7,7 @@ DB: master
 SharedFields:
 - ID: 06d5295c-ed2f-4a54-9bf2-26228d113318
   Hint: __Icon
-  Value: flags/32x32/flag_generic.png
+  Value: Office/32x32/flag_generic.png
 - ID: 60669e54-7b9c-4b55-a0c4-8f25059d8b94
   Hint: Dictionary
   Value: en-US.tdf

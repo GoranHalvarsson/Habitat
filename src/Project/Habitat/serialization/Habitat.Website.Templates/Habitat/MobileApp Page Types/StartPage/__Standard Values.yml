@@ -1,0 +1,25 @@
+﻿---
+ID: faa8fa13-3409-49d4-a0ca-12c8640cceb0
+Parent: 717d98be-18ea-4f2d-87b5-1205d49c6a08
+Template: 717d98be-18ea-4f2d-87b5-1205d49c6a08
+Path: /sitecore/templates/Project/Habitat/MobileApp Page Types/StartPage/__Standard Values
+DB: master
+SharedFields:
+- ID: 1172f251-dad4-4efb-a329-0c63500e4f1e
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {004AC6CB-42C5-40E8-B41E-043F1D5D7D17}
+    {B8EEF141-085B-46CE-875F-ECFFD01EA2C8}
+    {C2729CB5-650C-4EFF-B255-5060A7DCC20B}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+      Hint: __Created
+      Value: 20160323T212034Z
+    - ID: 5dd74568-4d4b-44c1-b513-0af5f4cda34f
+      Hint: __Created by
+      Value: sitecore\admin
