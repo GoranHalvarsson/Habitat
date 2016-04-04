@@ -4,6 +4,10 @@ Parent: 6aa25831-0944-4a79-9aff-7bac39e03557
 Template: c7d9d293-4ef8-4380-8e10-c4632e729f39
 Path: /sitecore/content/Habitat/Global/Teasers/Simplicity
 DB: master
+SharedFields:
+- ID: e8ab122c-6f54-4d4e-aec6-f81addc558fc
+  Hint: TeaserLink
+  Value: "<link text=\"Introduction\" linktype=\"internal\" class=\"\" title=\"\" target=\"\" querystring=\"\" id=\"{070037DB-3957-44B7-BFF6-2A45A90D648A}\" />"
 Languages:
 - Language: en
   Versions:
