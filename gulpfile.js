@@ -22,7 +22,8 @@ gulp.task("default", function (callback) {
     "02-Nuget-Restore",
     "03-Publish-All-Projects",
     "04-Apply-Xml-Transform",
-    "05-Sync-Unicorn", 
+    "05-Sync-Unicorn",
+    "06-Deploy-Transforms",
 	callback);
 });
 
@@ -53,37 +54,37 @@ gulp.task("03-Publish-All-Projects", function (callback) {
 });
 
 gulp.task("04-Apply-Xml-Transform", function () {
-  return gulp.src("./src/**/code/*.csproj")
+  var layerPathFilters = ["./src/Foundation/**/code/*.csproj", "./src/Feature/**/code/*.csproj", "./src/Project/**/code/*.csproj"];
+  return gulp.src(layerPathFilters)
     .pipe(foreach(function (stream, file) {
-      return stream
-        .pipe(debug({ title: "Applying transform project:" }))
-        .pipe(msbuild({
-          targets: ["ApplyTransform"],
-          configuration: config.buildConfiguration,
-          logCommand: false,
-          verbosity: "normal",
-          maxcpucount: 0,
-          toolsVersion: 14.0,
-          properties: {
-            WebConfigToTransform: config.websiteRoot
-          }
-        }));
+        return stream
+          .pipe(debug({ title: "Applying transform project:" }))
+          .pipe(msbuild({
+              targets: ["ApplyTransform"],
+              configuration: config.buildConfiguration,
+              logCommand: false,
+              verbosity: "normal",
+              maxcpucount: 0,
+              toolsVersion: 14.0,
+              properties: {
+                  WebConfigToTransform: config.websiteRoot
+              }
+          }));
     }));
-
 });
 
 gulp.task("05-Sync-Unicorn", function (callback) {
   var options = {};
-  options.configurationConfigFiles = [
-    __dirname + "/src/Foundation/Serialization/code/App_Config/Include/*/*.Serialization.config",
-    __dirname + "/src/Foundation/!(Serialization)/code/App_Config/Include/*/*.Serialization.config",
-    __dirname + "/src/Feature/**/code/App_Config/Include/*/*.Serialization.config",
-    __dirname + "/src/Project/Common/code/App_Config/Include/*/*.Serialization.config",
-    __dirname + "/src/Project/!(Common)/code/App_Config/Include/*/*.Serialization.config"];
   options.siteHostName = habitat.getSiteUrl();
   options.authenticationConfigFile = __dirname + "/src/Foundation/Serialization/code/App_config/Include/Foundation/Foundation.Serialization.config";
   
   unicorn(function() { return callback() }, options);
+});
+
+
+gulp.task("06-Deploy-Transforms", function () {
+    return gulp.src("./src/**/code/**/*.transform")
+        .pipe(gulp.dest(config.websiteRoot+"/temp/transforms"));
 });
 
 /*****************************
