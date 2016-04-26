@@ -118,33 +118,6 @@ Languages:
               s:id="{1149A3C7-C69A-4E6B-A6C3-32687EC2F8D4}"
               s:par="UseStaticPlaceholderNames&amp;Type=bg-secondary&amp;Media&amp;Parallax"
               s:ph="page-layout" />
-                  <rule uid="{F9C399F9-CD3A-4ECD-B313-E5352BAC6C7B}" s:name="Sadness">
-                    <conditions>
-                      <condition uid="1EA8AF708AFB4F3C905577BDE7F45429" s:id="{016A3B88-CDB4-4769-B0A4-CF0D55915596}" s:TagName="Emotion" s:operatorid="{10537C58-1684-4CAB-B4C0-40C10907CE31}" s:Value="Sadness" />
-                    </conditions>
-                    <actions>
-                      <action uid="1A703590B4B140CBB0F566DE91BF9088" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{86B2E20E-ECFC-45E2-8735-9A6FCAE83C95}" />
-                    </actions>
-                  </rule>
-                  <rule uid="{E3FEEB44-3D13-4AE0-82D2-EDBCDADBBEF0}" s:name="Happiness">
-                    <conditions>
-                      <condition uid="D044383AD5814D318CEE1495120EF6FA" s:id="{016A3B88-CDB4-4769-B0A4-CF0D55915596}" s:TagName="Emotion" s:operatorid="{10537C58-1684-4CAB-B4C0-40C10907CE31}" s:Value="Happiness" />
-                    </conditions>
-                    <actions>
-                      <action uid="C599234E4C8B43F98EC0B97736B80304" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{9AC1E982-476D-4567-93C4-EE0FCE56CECB}" />
-                    </actions>
-                  </rule>
-                  <rule uid="{00000000-0000-0000-0000-000000000000}" s:name="Default">
-                    <conditions>
-                      <condition uid="C397A475D756438CBD9A7080B0BF5BB4" s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
-                    </conditions>
-                    <actions>
-                      <action uid="B9BECBC3B403477EBFF2E9BEC5FB687F" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{B16765BA-7B3E-4C5B-9937-BFC985F2550C}" />
-                    </actions>
-                  </rule>
-                </ruleset>
-              </rls>
-            </r>
           </d>
         </r>
     - ID: "1b483e91-d8c4-4d19-ba03-462074b55936"

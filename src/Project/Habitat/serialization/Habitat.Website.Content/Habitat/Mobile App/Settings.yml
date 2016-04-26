@@ -1,24 +1,22 @@
 ﻿---
-ID: f1d88d87-f793-4c9c-9b8f-022061293048
-Parent: 061e42a3-7cd2-48bc-a611-963df88affe0
-Template: b8eef141-085b-46ce-875f-ecffd01ea2c8
+ID: "f1d88d87-f793-4c9c-9b8f-022061293048"
+Parent: "061e42a3-7cd2-48bc-a611-963df88affe0"
+Template: "b8eef141-085b-46ce-875f-ecffd01ea2c8"
 Path: /sitecore/content/Habitat/Mobile App/Settings
 DB: master
 SharedFields:
-- ID: 5585a30d-b115-4753-93ce-422c3455deb2
+- ID: "5585a30d-b115-4753-93ce-422c3455deb2"
   Hint: ShowInNavigation
+  Type: Checkbox
   Value: 1
-- ID: 8d5c486e-a0e3-4dbe-9a4a-cdff93594bda
-  Hint: IncludeInSearchResults
-  Value: 
 Languages:
 - Language: en
   Versions:
   - Version: 1
     Fields:
-    - ID: 1b483e91-d8c4-4d19-ba03-462074b55936
+    - ID: "1b483e91-d8c4-4d19-ba03-462074b55936"
       Hint: NavigationTitle
       Value: Settings
-    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20160324T132622Z

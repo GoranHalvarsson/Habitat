@@ -1,21 +1,21 @@
 ﻿---
-ID: 10e0daaf-720b-4f6c-bc64-170001c4cc0e
-Parent: 7d5b9458-7680-4feb-a7f1-7d72739fb970
-Template: 7d5b9458-7680-4feb-a7f1-7d72739fb970
+ID: "10e0daaf-720b-4f6c-bc64-170001c4cc0e"
+Parent: "7d5b9458-7680-4feb-a7f1-7d72739fb970"
+Template: "7d5b9458-7680-4feb-a7f1-7d72739fb970"
 Path: /sitecore/templates/Project/Habitat/MobileApp Page Types/SettingsPage/__Standard Values
 DB: master
 SharedFields:
-- ID: 06d5295c-ed2f-4a54-9bf2-26228d113318
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
-  Value: -/media/1ABF4717C26C4FEFA1D05B6548BF77D4.ashx?h=16&thn=1&w=16
+  Value: "-/media/1ABF4717C26C4FEFA1D05B6548BF77D4.ashx?h=16&thn=1&w=16"
 Languages:
 - Language: en
   Versions:
   - Version: 1
     Fields:
-    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20160323T211557Z
-    - ID: 5dd74568-4d4b-44c1-b513-0af5f4cda34f
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: sitecore\admin

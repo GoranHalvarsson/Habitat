@@ -1,7 +1,7 @@
 ﻿---
-ID: fa8ed3ca-124c-4c02-a288-4054625cfce4
-Parent: 061e42a3-7cd2-48bc-a611-963df88affe0
-Template: c2729cb5-650c-4eff-b255-5060a7dcc20b
+ID: "fa8ed3ca-124c-4c02-a288-4054625cfce4"
+Parent: "061e42a3-7cd2-48bc-a611-963df88affe0"
+Template: "c2729cb5-650c-4eff-b255-5060a7dcc20b"
 Path: /sitecore/content/Habitat/Mobile App/Modules
 DB: master
 Languages:
@@ -9,18 +9,18 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: 1b483e91-d8c4-4d19-ba03-462074b55936
+    - ID: "1b483e91-d8c4-4d19-ba03-462074b55936"
       Hint: NavigationTitle
       Value: Modules
-    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20160324T220725Z
-    - ID: 9492e0bb-9df9-46e7-8188-ec795c4ade44
+    - ID: "9492e0bb-9df9-46e7-8188-ec795c4ade44"
       Hint: Image
       Value: "<image mediaid=\"{88674CAA-CB67-4116-82FA-E2B0B0C54A45}\" />"
-    - ID: ac3fd4db-8266-476d-9635-67814d91e901
+    - ID: "ac3fd4db-8266-476d-9635-67814d91e901"
       Hint: Summary
       Value: The Habitat example implementation has a range of modules which covers the basics of a Sitecore website.
-    - ID: c30a013f-3cc8-4961-9837-1c483277084a
+    - ID: "c30a013f-3cc8-4961-9837-1c483277084a"
       Hint: Title
       Value: Modules

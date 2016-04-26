@@ -1,17 +1,27 @@
 ﻿---
-ID: 061e42a3-7cd2-48bc-a611-963df88affe0
-Parent: 725a45e3-e307-4b95-b363-2782b059df06
-Template: 717d98be-18ea-4f2d-87b5-1205d49c6a08
+ID: "061e42a3-7cd2-48bc-a611-963df88affe0"
+Parent: "725a45e3-e307-4b95-b363-2782b059df06"
+Template: "717d98be-18ea-4f2d-87b5-1205d49c6a08"
 Path: /sitecore/content/Habitat/Mobile App
 DB: master
 SharedFields:
-- ID: f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e
+- ID: "9e942565-677f-491c-a0ac-6b930e37342a"
+  Hint: Active
+  Value: "{6086F621-4A0E-4724-9D6F-EA7BA8139F57}|{8ABB8E75-E21C-4667-B277-C125B8E3A01F}|{EF593C2A-F3F8-421A-9368-0E189A689DBD}"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
   Value: |
     <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{ED043C36-CD48-4EDF-A288-EC404EE1CD42}">
-        <r ds="{D24907F7-1A25-43DC-A5A2-FCB1E55EBBB6}" id="{EE5A9F3D-C2CB-4710-8053-04D1A7135EBE}" par="" ph="" uid="{1EE0E7CF-292C-4E67-93FF-76D115D9A325}" />
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{ED043C36-CD48-4EDF-A288-EC404EE1CD42}">
+        <r
+          ds="{D24907F7-1A25-43DC-A5A2-FCB1E55EBBB6}"
+          id="{EE5A9F3D-C2CB-4710-8053-04D1A7135EBE}"
+          par=""
+          ph=""
+          uid="{1EE0E7CF-292C-4E67-93FF-76D115D9A325}" />
       </d>
     </r>
 Languages:
@@ -19,13 +29,13 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: 1b483e91-d8c4-4d19-ba03-462074b55936
+    - ID: "1b483e91-d8c4-4d19-ba03-462074b55936"
       Hint: NavigationTitle
       Value: Start
-    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20160323T223737Z
-    - ID: 72ea8682-24d2-4beb-951c-3e2164974105
+    - ID: "72ea8682-24d2-4beb-951c-3e2164974105"
       Hint: MediaSelector
       Type: Multilist
       Value: |
@@ -33,13 +43,6 @@ Languages:
         {69CF65FB-F46E-4038-BBFB-66695B9178E4}
         {12CFA7C1-B5BD-4C99-B6F4-221423F2E0E1}
         {EC545DC1-F12B-4B22-8FEB-7F0A4211C0E8}
-    - ID: 9e942565-677f-491c-a0ac-6b930e37342a
-      Hint: AccordeonSelector
-      Type: Treelist
-      Value: |
-        {6086F621-4A0E-4724-9D6F-EA7BA8139F57}
-        {8ABB8E75-E21C-4667-B277-C125B8E3A01F}
-        {EF593C2A-F3F8-421A-9368-0E189A689DBD}
-    - ID: c30a013f-3cc8-4961-9837-1c483277084a
+    - ID: "c30a013f-3cc8-4961-9837-1c483277084a"
       Hint: Title
       Value: Habitat

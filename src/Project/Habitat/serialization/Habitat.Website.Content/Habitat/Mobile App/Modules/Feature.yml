@@ -1,33 +1,29 @@
 ﻿---
-ID: 8a3f953d-7b4e-4bdc-9368-5852351c1d7d
-Parent: fa8ed3ca-124c-4c02-a288-4054625cfce4
-Template: c2729cb5-650c-4eff-b255-5060a7dcc20b
+ID: "8a3f953d-7b4e-4bdc-9368-5852351c1d7d"
+Parent: "fa8ed3ca-124c-4c02-a288-4054625cfce4"
+Template: "c2729cb5-650c-4eff-b255-5060a7dcc20b"
 Path: /sitecore/content/Habitat/Mobile App/Modules/Feature
 DB: master
-SharedFields:
-- ID: 5585a30d-b115-4753-93ce-422c3455deb2
-  Hint: ShowInNavigation
-  Value: 
 Languages:
 - Language: en
   Versions:
   - Version: 1
     Fields:
-    - ID: 1b483e91-d8c4-4d19-ba03-462074b55936
+    - ID: "1b483e91-d8c4-4d19-ba03-462074b55936"
       Hint: NavigationTitle
       Value: Feature
-    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20160324T220757Z
-    - ID: 9492e0bb-9df9-46e7-8188-ec795c4ade44
+    - ID: "9492e0bb-9df9-46e7-8188-ec795c4ade44"
       Hint: Image
       Value: "<image mediaid=\"{7F9A6C4D-D288-46A8-9D27-C084AE76A9DB}\" />"
-    - ID: ac3fd4db-8266-476d-9635-67814d91e901
+    - ID: "ac3fd4db-8266-476d-9635-67814d91e901"
       Hint: Summary
       Value: Feature modules are the functionality of the website such as navigation, search, content, accounts, etc. The bulk of the business logic and presentation elements sits in these modules.
-    - ID: c30a013f-3cc8-4961-9837-1c483277084a
+    - ID: "c30a013f-3cc8-4961-9837-1c483277084a"
       Hint: Title
       Value: The Feature layer
-    - ID: d74f396d-5c5e-4916-bd0a-bfd58b6b1967
+    - ID: "d74f396d-5c5e-4916-bd0a-bfd58b6b1967"
       Hint: Body
       Value: Feature modules are the functionality of the website such as navigation, search, content, accounts, etc. The bulk of the business logic and presentation elements sits in these modules.
