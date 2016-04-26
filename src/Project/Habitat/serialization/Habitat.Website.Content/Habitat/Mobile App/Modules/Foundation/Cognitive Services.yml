@@ -1,0 +1,31 @@
+﻿---
+ID: "7740cd5e-e4c4-4d7a-b211-6853129ed36d"
+Parent: "ca87dee0-dd76-45c1-96fd-8c520b99e662"
+Template: "b8eef141-085b-46ce-875f-ecffd01ea2c8"
+Path: /sitecore/content/Habitat/Mobile App/Modules/Foundation/Cognitive Services
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b483e91-d8c4-4d19-ba03-462074b55936"
+      Hint: NavigationTitle
+      Value: Cognitive Services
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151026T042033Z
+    - ID: "9492e0bb-9df9-46e7-8188-ec795c4ade44"
+      Hint: Image
+      Value: "<image mediaid=\"{DDDE1A0C-0FD3-4B15-80C6-AC063962162C}\" />"
+    - ID: "ac3fd4db-8266-476d-9635-67814d91e901"
+      Hint: Summary
+      Value: Microsoft Cognitive Services let you build apps with powerful algorithms
+    - ID: "c30a013f-3cc8-4961-9837-1c483277084a"
+      Hint: Title
+      Value: Cognitive Services
+    - ID: "d74f396d-5c5e-4916-bd0a-bfd58b6b1967"
+      Hint: Body
+      Value: |
+        Give your apps a human side
+        Knock down barriers between you and your ideas. Enable natural and contextual interaction with tools that augment users' experiences via the power of machine-based AI. Plug them in and bring your ideas to life.

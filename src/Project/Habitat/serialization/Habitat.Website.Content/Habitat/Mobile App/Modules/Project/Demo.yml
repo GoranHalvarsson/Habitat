@@ -1,8 +1,8 @@
 ﻿---
-ID: "531df3b4-edb1-43fa-9ab3-9b5ac1ed3b81"
-Parent: "8d8edb18-b641-4277-bad3-9c6cf89f9fe3"
-Template: "94a8c8e9-690b-4e65-98e7-f95800222767"
-Path: /sitecore/content/Habitat/Home/Modules/Project/Demo
+ID: "59e7d62d-0428-4416-b0bc-6d6ec1a5403b"
+Parent: "b9145c1b-061d-40a4-a0e2-ab7ee9e72a6e"
+Template: "b8eef141-085b-46ce-875f-ecffd01ea2c8"
+Path: /sitecore/content/Habitat/Mobile App/Modules/Project/Demo
 DB: master
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
@@ -27,9 +27,6 @@ Languages:
       Value: <p>The Demo website can be used to start demonstrations of the Sitecore platform, e.g. by creating mockups of external sites triggering campaigns or landing pages.</p>
     - ID: "c30a013f-3cc8-4961-9837-1c483277084a"
       Hint: Title
-      Value: Demo
-    - ID: "ca0479ce-0bfe-4522-83de-ba688b380a78"
-      Hint: BrowserTitle
       Value: Demo
     - ID: "d74f396d-5c5e-4916-bd0a-bfd58b6b1967"
       Hint: Body

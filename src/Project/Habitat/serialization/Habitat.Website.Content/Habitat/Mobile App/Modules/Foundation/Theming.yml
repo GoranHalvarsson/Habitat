@@ -1,8 +1,8 @@
 ﻿---
-ID: "f0d3abb7-1e45-4c5d-8070-b08a16b7ee1b"
-Parent: "1a3560fc-9e54-4e65-bead-e349f3b80dd7"
-Template: "94a8c8e9-690b-4e65-98e7-f95800222767"
-Path: /sitecore/content/Habitat/Home/Modules/Foundation/Theming
+ID: "72157410-2eec-4341-a6ae-bb9a1f6cb749"
+Parent: "ca87dee0-dd76-45c1-96fd-8c520b99e662"
+Template: "b8eef141-085b-46ce-875f-ecffd01ea2c8"
+Path: /sitecore/content/Habitat/Mobile App/Modules/Foundation/Theming
 DB: master
 Languages:
 - Language: en
@@ -20,9 +20,6 @@ Languages:
       Value: "The Theming module contains base theming and front-end assets for the solution, including Bootstrap and misc plug-ins."
     - ID: "c30a013f-3cc8-4961-9837-1c483277084a"
       Hint: Title
-      Value: Theming
-    - ID: "ca0479ce-0bfe-4522-83de-ba688b380a78"
-      Hint: BrowserTitle
       Value: Theming
     - ID: "d74f396d-5c5e-4916-bd0a-bfd58b6b1967"
       Hint: Body

@@ -1,8 +1,8 @@
 ﻿---
-ID: "06ec763e-5dd8-4c4e-9c8e-781b3f42c19b"
-Parent: "f7434df7-e32e-4f8c-a50e-27c476f4dc32"
-Template: "94a8c8e9-690b-4e65-98e7-f95800222767"
-Path: /sitecore/content/Habitat/Home/Modules/Feature/Accounts
+ID: "21954510-b99b-4f6c-b7b0-8b2f339ebf01"
+Parent: "8a3f953d-7b4e-4bdc-9368-5852351c1d7d"
+Template: "b8eef141-085b-46ce-875f-ecffd01ea2c8"
+Path: /sitecore/content/Habitat/Mobile App/Modules/Feature/Accounts
 DB: master
 Languages:
 - Language: en
@@ -59,9 +59,6 @@ Languages:
       Value: The accounts module handles user accounts and user profiles including login, registration, forgot password and profile editing.
     - ID: "c30a013f-3cc8-4961-9837-1c483277084a"
       Hint: Title
-      Value: Accounts
-    - ID: "ca0479ce-0bfe-4522-83de-ba688b380a78"
-      Hint: BrowserTitle
       Value: Accounts
     - ID: "d74f396d-5c5e-4916-bd0a-bfd58b6b1967"
       Hint: Body

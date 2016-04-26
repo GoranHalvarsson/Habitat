@@ -1,8 +1,8 @@
 ﻿---
-ID: "f7718fed-de86-4bfd-a952-023c41b385fd"
-Parent: "f7434df7-e32e-4f8c-a50e-27c476f4dc32"
-Template: "94a8c8e9-690b-4e65-98e7-f95800222767"
-Path: /sitecore/content/Habitat/Home/Modules/Feature/Media
+ID: "adc99cc7-2a1b-4743-83e0-6829af138fdd"
+Parent: "8a3f953d-7b4e-4bdc-9368-5852351c1d7d"
+Template: "b8eef141-085b-46ce-875f-ecffd01ea2c8"
+Path: /sitecore/content/Habitat/Mobile App/Modules/Feature/Media
 DB: master
 Languages:
 - Language: en
@@ -73,9 +73,6 @@ Languages:
       Value: The Media module contains functionality for Carousels, Lightboxes and Videos.
     - ID: "c30a013f-3cc8-4961-9837-1c483277084a"
       Hint: Title
-      Value: Media
-    - ID: "ca0479ce-0bfe-4522-83de-ba688b380a78"
-      Hint: BrowserTitle
       Value: Media
     - ID: "d74f396d-5c5e-4916-bd0a-bfd58b6b1967"
       Hint: Body

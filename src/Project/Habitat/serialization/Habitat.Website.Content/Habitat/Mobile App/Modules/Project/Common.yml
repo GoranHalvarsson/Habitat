@@ -1,8 +1,8 @@
 ﻿---
-ID: "0c34db6f-b60b-441c-ab7f-0f6b39668c8b"
-Parent: "8d8edb18-b641-4277-bad3-9c6cf89f9fe3"
-Template: "94a8c8e9-690b-4e65-98e7-f95800222767"
-Path: /sitecore/content/Habitat/Home/Modules/Project/Common
+ID: "a6ad9dc4-bf6d-47ee-b51e-c09e5843d568"
+Parent: "b9145c1b-061d-40a4-a0e2-ab7ee9e72a6e"
+Template: "b8eef141-085b-46ce-875f-ecffd01ea2c8"
+Path: /sitecore/content/Habitat/Mobile App/Modules/Project/Common
 DB: master
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
@@ -27,9 +27,6 @@ Languages:
       Value: "The common project contains content templates, folders and configuration which can be used across multiple sites in a multi-site setup."
     - ID: "c30a013f-3cc8-4961-9837-1c483277084a"
       Hint: Title
-      Value: Common
-    - ID: "ca0479ce-0bfe-4522-83de-ba688b380a78"
-      Hint: BrowserTitle
       Value: Common
     - ID: "d74f396d-5c5e-4916-bd0a-bfd58b6b1967"
       Hint: Body

@@ -1,8 +1,8 @@
 ﻿---
-ID: "af37224b-a26d-4574-bc46-c706d22ecf86"
-Parent: "8d8edb18-b641-4277-bad3-9c6cf89f9fe3"
-Template: "94a8c8e9-690b-4e65-98e7-f95800222767"
-Path: /sitecore/content/Habitat/Home/Modules/Project/Habitat
+ID: "ff74fc7d-9691-45e0-aac1-c3514edb84e0"
+Parent: "b9145c1b-061d-40a4-a0e2-ab7ee9e72a6e"
+Template: "b8eef141-085b-46ce-875f-ecffd01ea2c8"
+Path: /sitecore/content/Habitat/Mobile App/Modules/Project/Habitat
 DB: master
 SharedFields:
 - ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
@@ -51,9 +51,6 @@ Languages:
     - ID: "c30a013f-3cc8-4961-9837-1c483277084a"
       Hint: Title
       Value: Habitat
-    - ID: "ca0479ce-0bfe-4522-83de-ba688b380a78"
-      Hint: BrowserTitle
-      Value: Design
     - ID: "d74f396d-5c5e-4916-bd0a-bfd58b6b1967"
       Hint: Body
       Value: |

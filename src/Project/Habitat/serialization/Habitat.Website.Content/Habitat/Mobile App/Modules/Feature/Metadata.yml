@@ -1,8 +1,8 @@
 ﻿---
-ID: "5b47a05c-12c6-41c5-8ed8-e4e1960e3e18"
-Parent: "f7434df7-e32e-4f8c-a50e-27c476f4dc32"
-Template: "94a8c8e9-690b-4e65-98e7-f95800222767"
-Path: /sitecore/content/Habitat/Home/Modules/Feature/Metadata
+ID: "e0726d52-48f0-43c8-bf1b-04cc7fd60c98"
+Parent: "8a3f953d-7b4e-4bdc-9368-5852351c1d7d"
+Template: "b8eef141-085b-46ce-875f-ecffd01ea2c8"
+Path: /sitecore/content/Habitat/Mobile App/Modules/Feature/Metadata
 DB: master
 Languages:
 - Language: en
@@ -20,12 +20,9 @@ Languages:
       Value: "<image mediaid=\"{91C40066-B282-4030-95DA-4919E51CAADB}\" />"
     - ID: "ac3fd4db-8266-476d-9635-67814d91e901"
       Hint: Summary
-      Value: "<span style=\"line-height: 24.2857px;\">The metadata module covers functionality related to HTML</span><span style=\"line-height: 24.2857px;\"> and SEO</span><span style=\"line-height: 24.2857px;\"> metadata.</span>"
+      Value: "<span style=\"line-height: 24.2857px;\">The metadata module covers functionality related to HTML</span><span style=\"line-height: 24.2857px;\">&nbsp;and SEO</span><span style=\"line-height: 24.2857px;\">&nbsp;metadata.</span>"
     - ID: "c30a013f-3cc8-4961-9837-1c483277084a"
       Hint: Title
-      Value: Metadata
-    - ID: "ca0479ce-0bfe-4522-83de-ba688b380a78"
-      Hint: BrowserTitle
       Value: Metadata
     - ID: "d74f396d-5c5e-4916-bd0a-bfd58b6b1967"
       Hint: Body
