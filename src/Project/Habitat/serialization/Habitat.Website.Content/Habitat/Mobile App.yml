@@ -4,6 +4,16 @@ Parent: 725a45e3-e307-4b95-b363-2782b059df06
 Template: 717d98be-18ea-4f2d-87b5-1205d49c6a08
 Path: /sitecore/content/Habitat/Mobile App
 DB: master
+SharedFields:
+- ID: f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{ED043C36-CD48-4EDF-A288-EC404EE1CD42}">
+        <r ds="{D24907F7-1A25-43DC-A5A2-FCB1E55EBBB6}" id="{EE5A9F3D-C2CB-4710-8053-04D1A7135EBE}" par="" ph="" uid="{1EE0E7CF-292C-4E67-93FF-76D115D9A325}" />
+      </d>
+    </r>
 Languages:
 - Language: en
   Versions:

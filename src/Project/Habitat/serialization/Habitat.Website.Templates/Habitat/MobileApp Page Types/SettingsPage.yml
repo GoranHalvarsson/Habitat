@@ -1,0 +1,30 @@
+﻿---
+ID: 7d5b9458-7680-4feb-a7f1-7d72739fb970
+Parent: 6e7be1d6-6c21-4227-b775-6383c33c28f1
+Template: ab86861a-6030-46c5-b394-e8f99e8b87db
+Path: /sitecore/templates/Project/Habitat/MobileApp Page Types/SettingsPage
+DB: master
+SharedFields:
+- ID: 06d5295c-ed2f-4a54-9bf2-26228d113318
+  Hint: __Icon
+  Value: -/media/1ABF4717C26C4FEFA1D05B6548BF77D4.ashx?h=16&thn=1&w=16
+- ID: 12c33f3f-86c5-43a5-aeb4-5598cec45116
+  Hint: __Base template
+  Type: tree list
+  Value: |
+    {A1CBA309-D22B-46D5-80F8-2972C185363F}
+    {AF74A00B-8CA7-4C9A-A5C1-156A68590EE2}
+- ID: f7d48a55-2158-4f02-9356-756654404f73
+  Hint: __Standard values
+  Value: {10E0DAAF-720B-4F6C-BC64-170001C4CC0E}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: 25bed78c-4957-4165-998a-ca1b52f67497
+      Hint: __Created
+      Value: 20160323T211419Z
+    - ID: 5dd74568-4d4b-44c1-b513-0af5f4cda34f
+      Hint: __Created by
+      Value: sitecore\admin
