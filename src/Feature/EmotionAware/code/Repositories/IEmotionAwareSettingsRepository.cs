@@ -1,10 +1,10 @@
-namespace VisionsInCode.Foundation.EmotionAware.Repositories
+namespace VisionsInCode.Feature.EmotionAware.Repositories
 {
-  using System.Collections.Generic;
-  using VisionsInCode.Foundation.EmotionAware.Models;
-  using Sitecore.Data.Items;
 
-  public interface IEmotionAwareSettingsRepository
+  using VisionsInCode.Feature.EmotionAware.Models;
+
+
+    public interface IEmotionAwareSettingsRepository
   {
     EmotionAwareSettings Get();
 

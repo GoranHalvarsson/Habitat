@@ -1,10 +1,13 @@
 ﻿---
 ID: "f1d88d87-f793-4c9c-9b8f-022061293048"
 Parent: "061e42a3-7cd2-48bc-a611-963df88affe0"
-Template: "b8eef141-085b-46ce-875f-ecffd01ea2c8"
+Template: "7d5b9458-7680-4feb-a7f1-7d72739fb970"
 Path: /sitecore/content/Habitat/Mobile App/Settings
 DB: master
 SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/1ABF4717C26C4FEFA1D05B6548BF77D4.ashx"
 - ID: "5585a30d-b115-4753-93ce-422c3455deb2"
   Hint: ShowInNavigation
   Type: Checkbox

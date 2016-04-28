@@ -1,4 +1,4 @@
-namespace VisionsInCode.Foundation.EmotionAware.Repositories
+namespace VisionsInCode.Feature.EmotionAware.Repositories
 {
     using System.Collections.Generic;
     using Sitecore.Data.Items;

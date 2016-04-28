@@ -1,22 +1,21 @@
-﻿namespace VisionsInCode.Foundation.EmotionAware.Repositories
+﻿namespace VisionsInCode.Feature.EmotionAware.Repositories
 {
-  using System.EnterpriseServices;
   using Sitecore.Data.Items;
-  using System.Linq;
-  using VisionsInCode.Foundation.EmotionAware.Models;
-
+  using VisionsInCode.Feature.EmotionAware.Models;
   using Sitecore;
   using Sitecore.Foundation.SitecoreExtensions.Extensions;
   using VisionsInCode.Feature.EmotionAware;
 
-  public class EmotionAwareSettingsRepository : IEmotionAwareSettingsRepository
+
+
+    public class EmotionAwareSettingsRepository : IEmotionAwareSettingsRepository
   {
 
-    private readonly Item emotionAwareSettingsItem;
+    private readonly Item _emotionAwareSettingsItem;
 
     public EmotionAwareSettingsRepository()
     {
-      emotionAwareSettingsItem = GetEmotionAwareSettings();
+      _emotionAwareSettingsItem = GetEmotionAwareSettings();
     }
 
     private Item GetEmotionAwareSettings()
@@ -27,12 +26,12 @@
 
     public EmotionAwareSettings Get()
     {
-      if (emotionAwareSettingsItem == null)
+      if (_emotionAwareSettingsItem == null)
         return null;
 
       return new EmotionAwareSettings()
       {
-        SubscriptionKey = emotionAwareSettingsItem.GetString(Templates.EmotionAwareSettings.Fields.EmotionAwareSettingsSubscriptionKey)
+        SubscriptionKey = _emotionAwareSettingsItem.GetString(Templates.EmotionAwareSettings.Fields.EmotionAwareSettingsSubscriptionKey)
       };
 
     }

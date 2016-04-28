@@ -1,6 +1,6 @@
-﻿namespace VisionsInCode.Foundation.EmotionAware.Services
+﻿namespace VisionsInCode.Feature.EmotionAware.Services
 {
-  using VisionsInCode.Foundation.EmotionAware.Repositories;
+
   using System.Collections.Generic;
   using System.Linq;
   using VisionsInCode.Foundation.ProjectOxfordAI.Enums;
@@ -11,8 +11,9 @@
   using Sitecore.Analytics.Tracking;
   using Sitecore.Data.Items;
   using Sitecore.Diagnostics;
+  using VisionsInCode.Feature.EmotionAware.Repositories;
 
-  public class EmotionAnalyticsService : IEmotionAnalyticsService
+    public class EmotionAnalyticsService : IEmotionAnalyticsService
   {
 
     private readonly IAnalyticsRepository analyticsRepository;

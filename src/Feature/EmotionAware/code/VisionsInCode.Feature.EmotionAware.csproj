@@ -118,6 +118,7 @@
   <ItemGroup>
     <Compile Include="Controllers\EmotionAwareController.cs" />
     <Compile Include="Models\EmotionAwareSettings.cs" />
+    <Compile Include="Pipelines\RegisterWebApiRoutes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\EmotionAwareSettingsRepository.cs" />
     <Compile Include="Repositories\AnalyticsRepository.cs" />

@@ -1,8 +1,8 @@
-﻿namespace VisionsInCode.Foundation.EmotionAware.Controllers
+﻿namespace VisionsInCode.Feature.EmotionAware.Controllers
 {
   using System.Threading.Tasks;
   using System.Web.Mvc;
-  using VisionsInCode.Foundation.EmotionAware.Services;
+  using VisionsInCode.Feature.EmotionAware.Services;
   using VisionsInCode.Foundation.ProjectOxfordAI.Enums;
 
 

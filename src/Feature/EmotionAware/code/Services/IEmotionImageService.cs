@@ -1,4 +1,4 @@
-namespace VisionsInCode.Foundation.EmotionAware.Services
+namespace VisionsInCode.Feature.EmotionAware.Services
 {
   using System.Threading.Tasks;
   using VisionsInCode.Foundation.ProjectOxfordAI.Enums;

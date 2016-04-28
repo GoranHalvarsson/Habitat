@@ -1,4 +1,4 @@
-﻿namespace VisionsInCode.Foundation.EmotionAware.Services
+﻿namespace VisionsInCode.Feature.EmotionAware.Services
 {
   using System;
   using System.IO;
@@ -7,37 +7,38 @@
   using VisionsInCode.Foundation.ProjectOxfordAI.Services;
   using System.Collections.Generic;
   using System.Linq;
-  using VisionsInCode.Foundation.EmotionAware.Models;
-  using VisionsInCode.Foundation.EmotionAware.Repositories;
+
   using Sitecore.Diagnostics;
+  using VisionsInCode.Feature.EmotionAware.Models;
+  using VisionsInCode.Feature.EmotionAware.Repositories;
 
 
-  public class EmotionImageService : IEmotionImageService
+    public class EmotionImageService : IEmotionImageService
   {
-    private readonly IEmotionAwareSettingsRepository emotionAwareSettingsRepository;
+    private readonly IEmotionAwareSettingsRepository _emotionAwareSettingsRepository;
 
-    private readonly EmotionAwareSettings emotionAwareSettings;
+    private readonly EmotionAwareSettings _emotionAwareSettings;
 
     public EmotionImageService(IEmotionAwareSettingsRepository emotionAwareSettingsRepository)
     {
-      this.emotionAwareSettingsRepository = emotionAwareSettingsRepository;
+      _emotionAwareSettingsRepository = emotionAwareSettingsRepository;
     }
 
     public EmotionImageService() : this(new EmotionAwareSettingsRepository())
     {
-      emotionAwareSettings = emotionAwareSettingsRepository.Get();
+      _emotionAwareSettings = _emotionAwareSettingsRepository.Get();
     }
 
     public async Task<Emotions> GetEmotionFromImage(string stringBase64Image)
     {
 
-      if (this.emotionAwareSettings == null || string.IsNullOrWhiteSpace(emotionAwareSettings.SubscriptionKey))
+      if (_emotionAwareSettings == null || string.IsNullOrWhiteSpace(_emotionAwareSettings.SubscriptionKey))
       {
         Log.Error("SubscriptionKey is missing for emotion service", typeof(EmotionImageService));
         return Emotions.None;
       }
 
-      IEmotionsService emotionsService = new EmotionsService(emotionAwareSettings.SubscriptionKey);
+      IEmotionsService emotionsService = new EmotionsService(_emotionAwareSettings.SubscriptionKey);
 
       MemoryStream faceImage = new MemoryStream(Convert.FromBase64String(stringBase64Image));
 
