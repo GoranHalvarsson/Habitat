@@ -4,6 +4,11 @@ Parent: "fa8ed3ca-124c-4c02-a288-4054625cfce4"
 Template: "8fbeea06-69fc-4919-b711-42384d49fa28"
 Path: /sitecore/content/Habitat/Mobile App/Modules/Feature
 DB: master
+SharedFields:
+- ID: "5585a30d-b115-4753-93ce-422c3455deb2"
+  Hint: ShowInNavigation
+  Type: Checkbox
+  Value: 0
 Languages:
 - Language: en
   Versions:

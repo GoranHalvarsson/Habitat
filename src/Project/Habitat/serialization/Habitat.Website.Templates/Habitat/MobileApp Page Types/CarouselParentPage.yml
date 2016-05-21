@@ -14,13 +14,17 @@ SharedFields:
   Value: |
     {AF74A00B-8CA7-4C9A-A5C1-156A68590EE2}
     {A1CBA309-D22B-46D5-80F8-2972C185363F}
+    {2D939D5F-6214-4350-860A-10D79A00EE34}
     {8FD6C8B6-A9A4-4322-947E-90CE3D94916D}
-    {A16B74E9-01B8-439C-B44E-42B3FB2EE14B}
 - ID: "f7d48a55-2158-4f02-9356-756654404f73"
   Hint: __Standard values
   Value: "{AB3A96DF-C1B0-4FDC-974A-C9791D3C7C78}"
 Languages:
 - Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Carousel Parent Page
   Versions:
   - Version: 1
     Fields:

@@ -23,3 +23,12 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20160324T132622Z
+    - ID: "ac3fd4db-8266-476d-9635-67814d91e901"
+      Hint: Summary
+      Value: Be careful when you do a change, it saves automatically.
+    - ID: "c30a013f-3cc8-4961-9837-1c483277084a"
+      Hint: Title
+      Value: Settings
+    - ID: "fa0fe5fe-092c-42ff-9b5e-e07213d5d703"
+      Hint: Icon
+      Value: gear_24.png
