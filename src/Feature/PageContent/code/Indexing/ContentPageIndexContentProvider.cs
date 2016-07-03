@@ -5,14 +5,14 @@
   using System.Linq.Expressions;
   using Sitecore.ContentSearch.SearchTypes;
   using Sitecore.Data;
-  using Sitecore.Foundation.Dictionary.Repositories;
   using Sitecore.Foundation.Indexing.Infrastructure;
   using Sitecore.Foundation.Indexing.Models;
+  using Sitecore.Foundation.SitecoreExtensions.Repositories;
   using Sitecore.Web.UI.WebControls;
 
   public class PageContentIndexContentProvider : IndexContentProviderBase
   {
-    public override string ContentType => DictionaryPhraseRepository.Current.Get("/Page Content/Search/Content Type", "Page");
+    public override string ContentType => DictionaryRepository.Get("/pagecontent/search/contenttype", "Page");
 
     public override IEnumerable<ID> SupportedTemplates => new[] {Templates.HasPageContent.ID};
 
