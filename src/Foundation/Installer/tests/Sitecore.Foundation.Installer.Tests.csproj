@@ -113,8 +113,6 @@
   <ItemGroup>
     <Compile Include="AccountsEnableActionTests.cs" />
     <Compile Include="AutoSububstituteDataAttribute.cs" />
-    <Compile Include="MongoRestore\MongoRestoreProcessorTests.cs" />
-    <Compile Include="MongoRestore\MongoRestoreServiceTests.cs" />
     <Compile Include="PostStepTests.cs" />
     <Compile Include="XmlTransformActionTests.cs" />
     <Compile Include="ProcessRunnerTests.cs" />

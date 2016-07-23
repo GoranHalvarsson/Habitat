@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.SitecoreExtensions", "src\foundation\SitecoreExtensions\code\Sitecore.Foundation.SitecoreExtensions.csproj", "{B535703F-8D07-4F23-A533-2974BB4CC7B1}"
 EndProject
@@ -175,6 +175,7 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisionsInCode.Foundation.Realtime", "src\Foundation\Realtime\code\VisionsInCode.Foundation.Realtime.csproj", "{33210683-0A07-4190-B7CC-235D9B72AD5B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisionsInCode.Foundation.Realtime.Tests", "src\Foundation\Realtime\tests\VisionsInCode.Foundation.Realtime.Tests.csproj", "{DCA5A741-50E5-47C3-8B1E-6A3D276006BE}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.Maps", "src\Feature\Maps\code\Sitecore.Feature.Maps.csproj", "{19CE4259-BD16-4239-AC7C-22220FB26575}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Maps", "Maps", "{96063E26-CEF1-4763-90EF-81271231DB9F}"
@@ -198,10 +199,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisionsInCode.Foundation.SitecoreCustomizations", "src\Foundation\SitecoreCustomizations\code\VisionsInCode.Foundation.SitecoreCustomizations.csproj", "{1522D439-7BCC-48FF-8AE5-A894423EC5C9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisionsInCode.Foundation.SitecoreCustomizations.Tests", "src\Foundation\SitecoreCustomizations\Tests\VisionsInCode.Foundation.SitecoreCustomizations.Tests.csproj", "{6DE59139-B8FE-4005-B490-1BCE6AA173F6}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1B32FB80-BED9-4746-9362-CDB810C20896}"
 	ProjectSection(SolutionItems) = preProject
 		WebEssentials2015-Settings.json = WebEssentials2015-Settings.json
 	EndProjectSection
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Forms", "Forms", "{8E84ED61-498A-4FBF-A3F3-FB7CEAE6A3E1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Forms", "Forms", "{63F04251-177B-49CB-B1CF-206B56CCF889}"
@@ -229,6 +232,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.Teasers.Tests", "src\Feature\Teasers\tests\Sitecore.Feature.Teasers.Tests.csproj", "{E2E3E9FC-15EB-4212-A6BD-A0D9590541E4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.Dictionary.Tests", "src\Foundation\Dictionary\tests\Sitecore.Foundation.Dictionary.Tests.csproj", "{C6AED40E-22F8-49EC-AA3E-D9323E207A9D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SpeakComponents", "SpeakComponents", "{0AC61275-58B3-48DE-B2FC-BB22A4E26E99}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -838,5 +843,6 @@ Global
 		{F1585C81-8BFD-44D5-8601-C4A4CF5BEA33} = {6B260718-681F-41DB-AAFE-13BA15BB6711}
 		{E2E3E9FC-15EB-4212-A6BD-A0D9590541E4} = {8AE5D37C-D340-4D66-8BAE-48A7ED60BCE8}
 		{C6AED40E-22F8-49EC-AA3E-D9323E207A9D} = {66E8BB68-FF26-4FEE-A336-3F8284F2F3E2}
+		{0AC61275-58B3-48DE-B2FC-BB22A4E26E99} = {D2CBE02E-6AA7-4343-9A01-891F971A17F5}
 	EndGlobalSection
 EndGlobal

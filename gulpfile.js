@@ -147,7 +147,7 @@ gulp.task("Realtime-Copy-MongoDB-dll's", function () {
       .pipe(gulp.dest(destination));
 });
 
-gulp.task("Realtime-Copy-Newtonsoft8-dll", function () {
+gulp.task("Realtime-Copy-Newtonsoft-dll", function () {
     console.log("Copying newtonsoft assemblies to website");
     var root = "./src/Foundation/Realtime/code/bin";
     var binFiles = root + "/Newtonsoft.Json.{dll,pdb,xml}";

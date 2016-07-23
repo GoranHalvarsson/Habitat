@@ -180,13 +180,6 @@
     <Compile Include="AccountsEnableAction.cs" />
     <Compile Include="IPostStepAction.cs" />
     <Compile Include="IProcessRunner.cs" />
-    <Compile Include="MongoRestore\IMongoPathsProvider.cs" />
-    <Compile Include="MongoRestore\IMongoRestoreService.cs" />
-    <Compile Include="MongoRestore\MongoPathsProvider.cs" />
-    <Compile Include="MongoRestore\MongoRestoreAction.cs" />
-    <Compile Include="MongoRestore\MongoRestoreProcessor.cs" />
-    <Compile Include="MongoRestore\MongoRestoreService.cs" />
-    <Compile Include="MongoRestore\MongoRestoreSettings.cs" />
     <Compile Include="ProcessException.cs" />
     <Compile Include="ProcessRunner.cs" />
     <Compile Include="ReportingDbReplace\DatabaseService.cs" />
