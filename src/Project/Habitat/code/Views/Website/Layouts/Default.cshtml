@@ -2,6 +2,7 @@
 @using Sitecore.Foundation.Assets.Models
 @using Sitecore.Foundation.SitecoreExtensions.Extensions
 @using Sitecore.Mvc.Analytics.Extensions
+@using VisionsInCode.Foundation.SitecoreCustomizations.Extensions
 @inherits WebViewPage
 @{
   Layout = null;
@@ -25,7 +26,8 @@
   @RenderAssetsService.Current.RenderStyles()
   @Html.Sitecore().VisitorIdentification()
 </head>
-<body class="header-static @(Sitecore.Context.PageMode.IsNormal ? "" : (Sitecore.Context.PageMode.IsExperienceEditor ? "pagemode-edit" : "pagemode-preview"))">
+<body class="header-static @(Sitecore.Context.PageMode.IsNormal ? "" : (Sitecore.Context.PageMode.IsExperienceEditor ? "pagemode-edit" : "pagemode-preview"))" @(!Sitecore.Context.PageMode.IsExperienceEditor ?? "data-currentipaddress ='" + Sitecore.Analytics.Tracker.Current.Interaction.Ip.GetFriendlyIpAddress() + "'")  >
+  
   <div id="main-container">
     <header class="header-static">
       @Html.Sitecore().Placeholder("header-top")

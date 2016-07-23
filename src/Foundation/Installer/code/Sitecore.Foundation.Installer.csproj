@@ -196,7 +196,6 @@
     <Compile Include="XmlTransform\XmlTransformAction.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Foundation\Foundation.Installer.config" />
     <Content Include="App_Data\MongoData\libeay32.dll" />
     <Content Include="App_Data\MongoData\mongorestore.exe" />
     <Content Include="App_Data\MongoData\ssleay32.dll" />
@@ -204,7 +203,9 @@
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="web.config.transform" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Config\Include\Foundation\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Assets\code\Sitecore.Foundation.Assets.csproj">
       <Project>{7E46FF93-EE05-412C-AC47-2A59A13DA73C}</Project>

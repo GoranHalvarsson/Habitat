@@ -119,6 +119,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extensions\AnalyticsExtensions.cs" />
     <Compile Include="Extensions\ItemExtensions.cs" />
     <Compile Include="Rules\PoorMansDeviceDetectorCondition.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
