@@ -26,7 +26,7 @@
   @RenderAssetsService.Current.RenderStyles()
   @Html.Sitecore().VisitorIdentification()
 </head>
-<body class="header-static @(Sitecore.Context.PageMode.IsNormal ? "" : (Sitecore.Context.PageMode.IsExperienceEditor ? "pagemode-edit" : "pagemode-preview"))" @(!Sitecore.Context.PageMode.IsExperienceEditor ?? "data-currentipaddress ='" + Sitecore.Analytics.Tracker.Current.Interaction.Ip.GetFriendlyIpAddress() + "'")  >
+<body class="header-static @(Sitecore.Context.PageMode.IsNormal ? "" : (Sitecore.Context.PageMode.IsExperienceEditor ? "pagemode-edit" : "pagemode-preview"))" @(!Sitecore.Context.PageMode.IsExperienceEditor ? "data-currentipaddress =" + Sitecore.Analytics.Tracker.Current.Interaction.Ip.GetFriendlyIpAddress() : "")  >
   
   <div id="main-container">
     <header class="header-static">
