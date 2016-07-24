@@ -253,12 +253,6 @@
       await GetClientData(Constants.Realtime.SubscriberGroups.Visitors);
     }
 
-    //public async Task NewContosoChatMessage(string name, string message)
-    //{
-    //    await Clients.Others.addContosoChatMessageToPage(data);
-    //    Clients.Caller.notifyMessageSent();
-    //}
-
     private async Task<VisitorDataContainer> SetGeoIpData(VisitorDataContainer visitorDataContainer)
     {
       //Get geoIp
