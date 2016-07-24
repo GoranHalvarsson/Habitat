@@ -81,7 +81,7 @@ gulp.task("04-Apply-Xml-Transform", function () {
     }));
 });
 
-gulp.task("Realtimey-Xml-Transform", function () {
+gulp.task("Realtime-Xml-Transform", function () {
     return gulp.src("./src/Foundation/Realtime/**/code/*.csproj")
       .pipe(foreach(function (stream, file) {
           return stream
